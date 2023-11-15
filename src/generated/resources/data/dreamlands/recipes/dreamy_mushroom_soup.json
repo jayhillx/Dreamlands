@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dreamy_mushroom_soup",
+  "ingredients": [
+    {
+      "item": "dreamlands:dreamy_mushroom"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "dreamlands:dreamy_mushroom_soup"
+  }
+}
