@@ -1,6 +1,9 @@
-// 1.20.1	2023-11-11T21:38:35.5775516	Item Models: dreamlands
+// 1.20.1	2023-11-15T01:04:56.1843223	Item Models: dreamlands
 465ea842b6e7632ee8815802754d795004dc56e1 assets/dreamlands/models/item/burnt_marshmallow.json
+70ac8bb1489d35dc82e2f989ad944a6757e0b836 assets/dreamlands/models/item/burnt_marshmallow_on_a_stick.json
 4d4124a23941e1d158bc102780248eeebbccea33 assets/dreamlands/models/item/dreamy_mushroom.json
 5e65bdfedd151007650d6b773ccc3d8aa5657e21 assets/dreamlands/models/item/dreamy_mushroom_soup.json
 dcff67047557ac224ddc8a9851233a1bf4e5db5b assets/dreamlands/models/item/marshmallow.json
+b7d7a7638d447424973e7a2090fdb38491538cab assets/dreamlands/models/item/marshmallow_on_a_stick.json
 9ce1bd0cf4fa0b5a6c9d2954394104ab75fead90 assets/dreamlands/models/item/toasted_marshmallow.json
+5689bbb6d584361618a089926aa4defecda0d397 assets/dreamlands/models/item/toasted_marshmallow_on_a_stick.json

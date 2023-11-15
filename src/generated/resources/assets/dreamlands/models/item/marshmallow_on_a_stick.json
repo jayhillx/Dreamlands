@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/handheld",
+  "overrides": [
+    {
+      "model": "dreamlands:item/toasted_marshmallow_on_a_stick",
+      "predicate": {
+        "dreamlands:condition": 1.0
+      }
+    },
+    {
+      "model": "dreamlands:item/burnt_marshmallow_on_a_stick",
+      "predicate": {
+        "dreamlands:condition": 2.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "dreamlands:item/marshmallow_on_a_stick"
+  }
+}

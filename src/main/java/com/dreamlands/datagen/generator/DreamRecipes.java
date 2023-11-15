@@ -26,6 +26,25 @@ public class DreamRecipes extends RecipeProvider {
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(DreamItems.DREAMY_MUSHROOM.get()), has(DreamItems.DREAMY_MUSHROOM.get()))
                 .save(consumer, Dreamlands.modLoc("dreamy_mushroom_soup"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DreamItems.MARSHMALLOW_ON_A_STICK.get())
+                .group("marshmallow_on_a_stick")
+                .requires(DreamItems.MARSHMALLOW.get())
+                .requires(Items.STICK)
+                .unlockedBy(getHasName(DreamItems.MARSHMALLOW.get()), has(DreamItems.MARSHMALLOW.get()))
+                .save(consumer, Dreamlands.modLoc("marshmallow_on_a_stick"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DreamItems.MARSHMALLOW.get())
+                .group("marshmallow_from_stick")
+                .requires(DreamItems.MARSHMALLOW_ON_A_STICK.get())
+                .unlockedBy(getHasName(DreamItems.MARSHMALLOW_ON_A_STICK.get()), has(DreamItems.MARSHMALLOW_ON_A_STICK.get()))
+                .save(consumer, Dreamlands.modLoc("marshmallow_from_stick"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DreamItems.MARSHMALLOW.get())
+                .group("marshmallow")
+                .requires(Items.SUGAR)
+                .unlockedBy(getHasName(Items.SUGAR), has(Items.SUGAR))
+                .save(consumer, Dreamlands.modLoc("marshmallow"));
     }
 
 }

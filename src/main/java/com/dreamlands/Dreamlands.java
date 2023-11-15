@@ -1,9 +1,12 @@
 package com.dreamlands;
 
+import com.dreamlands.common.event.CampfireEvents;
+import com.dreamlands.common.util.ItemPropertiesUtils;
 import com.dreamlands.init.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -30,6 +33,8 @@ public class Dreamlands {
         DreamBlocks.BLOCKS.register(bus);
         DreamItems.ITEMS.register(bus);
         DreamTab.CREATIVE_TABS.register(bus);
+
+        MinecraftForge.EVENT_BUS.register(new CampfireEvents());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -40,7 +45,7 @@ public class Dreamlands {
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-
+        ItemPropertiesUtils.registerItemProperties();
     }
 
 }

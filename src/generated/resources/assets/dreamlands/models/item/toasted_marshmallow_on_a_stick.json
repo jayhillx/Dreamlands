@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "dreamlands:item/toasted_marshmallow_on_a_stick"
+  }
+}

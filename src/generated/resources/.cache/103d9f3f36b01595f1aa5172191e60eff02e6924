@@ -1,5 +1,7 @@
-// 1.20.1	2023-11-11T17:38:28.5562768	Registries
+// 1.20.1	2023-11-15T00:25:33.3504792	Registries
 b8b651beb6cc29c196ccae09ac1d9f9c89c4b178 data/dreamlands/dimension/dreamland.json
 69debd9171c628e0e3237d4d7fcbaedc37425c84 data/dreamlands/dimension_type/dreamland.json
+8d33b51d4860158fb361f89fc71900b40c17c538 data/dreamlands/worldgen/biome/cotton_candy_forest.json
+8d33b51d4860158fb361f89fc71900b40c17c538 data/dreamlands/worldgen/biome/ethereal_forest.json
 8d33b51d4860158fb361f89fc71900b40c17c538 data/dreamlands/worldgen/biome/evergreen_forest.json
 874aebe4f87bbe3e08e9242dc91df1330be4223b data/dreamlands/worldgen/noise_settings/dreamland.json
