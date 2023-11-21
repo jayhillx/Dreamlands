@@ -20,7 +20,7 @@ public class DreamItemTags extends ItemTagsProvider {
 
     @Override
     protected void addTags(@Nonnull HolderLookup.Provider provider) {
-        tag(ItemTags.PLANKS).add(DreamItems.EVERGREEN_PLANKS.get(), DreamItems.ETHEREAL_PLANKS.get(), DreamItems.CANDY_PLANKS.get());
+        tag(ItemTags.PLANKS).add(DreamItems.EVERGREEN_PLANKS.get(), DreamItems.ETHEREAL_PLANKS.get(), DreamItems.CANDY_PLANKS.get(), DreamItems.EBONY_PLANKS.get(), DreamItems.DEAD_PLANKS.get(), DreamItems.BLOODWOOD_PLANKS.get());
     }
 
 }

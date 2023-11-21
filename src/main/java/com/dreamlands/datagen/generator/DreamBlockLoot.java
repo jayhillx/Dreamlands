@@ -27,6 +27,10 @@ public class DreamBlockLoot extends BlockLootSubProvider {
         dropSelf(DreamBlocks.ETHEREAL_PLANKS.get());
         dropSelf(DreamBlocks.CANDY_PLANKS.get());
 
+        dropSelf(DreamBlocks.EBONY_PLANKS.get());
+        dropSelf(DreamBlocks.DEAD_PLANKS.get());
+        dropSelf(DreamBlocks.BLOODWOOD_PLANKS.get());
+
         dropSelf(DreamBlocks.DREAMY_MUSHROOM.get());
     }
 

@@ -19,7 +19,7 @@ public class DreamBlockTags extends BlockTagsProvider {
 
     @Override
     protected void addTags(@Nonnull HolderLookup.Provider provider) {
-        tag(BlockTags.PLANKS).add(DreamBlocks.EVERGREEN_PLANKS.get(), DreamBlocks.ETHEREAL_PLANKS.get(), DreamBlocks.CANDY_PLANKS.get());
+        tag(BlockTags.PLANKS).add(DreamBlocks.EVERGREEN_PLANKS.get(), DreamBlocks.ETHEREAL_PLANKS.get(), DreamBlocks.CANDY_PLANKS.get(), DreamBlocks.EBONY_PLANKS.get(), DreamBlocks.DEAD_PLANKS.get(), DreamBlocks.BLOODWOOD_PLANKS.get());
     }
 
 }

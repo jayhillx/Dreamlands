@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "food",
+  "key": {
+    "#": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "dreamlands:marshmallow"
+  },
+  "show_notification": true
+}

@@ -23,10 +23,8 @@ public class DreamItemModels extends ItemModelProvider {
         handheld(DreamItems.MARSHMALLOW_ON_A_STICK.getId());
         handheld(DreamItems.TOASTED_MARSHMALLOW_ON_A_STICK.getId());
         handheld(DreamItems.BURNT_MARSHMALLOW_ON_A_STICK.getId());
-
         basic(DreamItems.SMORE.getId());
         basic(DreamItems.DREAMY_MUSHROOM_SOUP.getId());
-
         blockItem(DreamBlocks.DREAMY_MUSHROOM.getId());
     }
 

@@ -18,6 +18,11 @@ public class DreamBlockStates extends BlockStateProvider {
         planks(DreamBlocks.EVERGREEN_PLANKS.get());
         planks(DreamBlocks.ETHEREAL_PLANKS.get());
         planks(DreamBlocks.CANDY_PLANKS.get());
+
+        planks(DreamBlocks.EBONY_PLANKS.get());
+        planks(DreamBlocks.DEAD_PLANKS.get());
+        planks(DreamBlocks.BLOODWOOD_PLANKS.get());
+
         plant(DreamBlocks.DREAMY_MUSHROOM.get());
     }
 
