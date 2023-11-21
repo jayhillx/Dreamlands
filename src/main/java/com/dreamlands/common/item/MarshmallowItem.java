@@ -8,8 +8,8 @@ import net.minecraft.world.item.Item;
  */
 public class MarshmallowItem extends Item {
 
-    public MarshmallowItem(int nutrition, float saturation) {
-        super(new Properties().food(new FoodProperties.Builder().fast().nutrition(nutrition).saturationMod(saturation).build()));
+    public MarshmallowItem() {
+        super(new Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build()));
     }
 
 }

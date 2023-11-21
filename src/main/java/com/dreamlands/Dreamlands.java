@@ -1,7 +1,8 @@
 package com.dreamlands;
 
+import com.dreamlands.common.capability.CapabilityHandler;
 import com.dreamlands.common.event.CampfireEvents;
-import com.dreamlands.common.util.ItemPropertiesUtils;
+import com.dreamlands.common.event.SleepEvents;
 import com.dreamlands.init.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -34,7 +35,9 @@ public class Dreamlands {
         DreamItems.ITEMS.register(bus);
         DreamTab.CREATIVE_TABS.register(bus);
 
+        MinecraftForge.EVENT_BUS.register(new SleepEvents());
         MinecraftForge.EVENT_BUS.register(new CampfireEvents());
+        MinecraftForge.EVENT_BUS.register(new CapabilityHandler());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -45,7 +48,7 @@ public class Dreamlands {
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        ItemPropertiesUtils.registerItemProperties();
+
     }
 
 }

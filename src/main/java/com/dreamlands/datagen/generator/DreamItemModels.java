@@ -20,13 +20,14 @@ public class DreamItemModels extends ItemModelProvider {
         basic(DreamItems.MARSHMALLOW.getId());
         basic(DreamItems.TOASTED_MARSHMALLOW.getId());
         basic(DreamItems.BURNT_MARSHMALLOW.getId());
+        handheld(DreamItems.MARSHMALLOW_ON_A_STICK.getId());
+        handheld(DreamItems.TOASTED_MARSHMALLOW_ON_A_STICK.getId());
+        handheld(DreamItems.BURNT_MARSHMALLOW_ON_A_STICK.getId());
+
+        basic(DreamItems.SMORE.getId());
         basic(DreamItems.DREAMY_MUSHROOM_SOUP.getId());
 
         blockItem(DreamBlocks.DREAMY_MUSHROOM.getId());
-
-        marshmallowItem(DreamItems.MARSHMALLOW_ON_A_STICK.getId());
-        handheld(Dreamlands.modLoc("toasted_marshmallow_on_a_stick"));
-        handheld(Dreamlands.modLoc("burnt_marshmallow_on_a_stick"));
     }
 
     private void basic(ResourceLocation location) {
@@ -44,15 +45,6 @@ public class DreamItemModels extends ItemModelProvider {
 
     private void blockItem(ResourceLocation location) {
         this.getBuilder(location.getPath()).parent(new ModelFile.UncheckedModelFile("item/generated")).texture("layer0", Dreamlands.modLoc("block/" + location.getPath()));
-    }
-
-    private void marshmallowItem(ResourceLocation location) {
-        this.getBuilder(location.getPath()).parent(new ModelFile.UncheckedModelFile("item/handheld"))
-                .texture("layer0", Dreamlands.modLoc("item/" + location.getPath()))
-                .override()
-                .predicate(Dreamlands.modLoc("condition"), 1).model(new ModelFile.UncheckedModelFile("dreamlands:item/toasted_" + location.getPath())).end()
-                .override()
-                .predicate(Dreamlands.modLoc("condition"), 2).model(new ModelFile.UncheckedModelFile("dreamlands:item/burnt_" + location.getPath())).end();
     }
 
 }

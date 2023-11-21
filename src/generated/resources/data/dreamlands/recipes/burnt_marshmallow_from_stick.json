@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "burnt_marshmallow_from_stick",
+  "ingredients": [
+    {
+      "item": "dreamlands:burnt_marshmallow_on_a_stick"
+    }
+  ],
+  "result": {
+    "item": "dreamlands:burnt_marshmallow"
+  }
+}

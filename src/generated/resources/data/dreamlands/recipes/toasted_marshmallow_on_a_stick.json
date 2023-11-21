@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "toasted_marshmallow_on_a_stick",
+  "ingredients": [
+    {
+      "item": "dreamlands:toasted_marshmallow"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "dreamlands:toasted_marshmallow_on_a_stick"
+  }
+}

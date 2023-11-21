@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_marshmallow": {
+    "has_burnt_marshmallow": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dreamlands:marshmallow"
+              "dreamlands:burnt_marshmallow"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dreamlands:marshmallow_from_stick"
+        "recipe": "dreamlands:burnt_marshmallow_from_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_marshmallow",
+      "has_burnt_marshmallow",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dreamlands:marshmallow_from_stick"
+      "dreamlands:burnt_marshmallow_from_stick"
     ]
   },
   "sends_telemetry_event": false

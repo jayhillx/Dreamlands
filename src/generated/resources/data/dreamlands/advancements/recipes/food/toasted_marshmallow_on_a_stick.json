@@ -1,34 +1,34 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sugar": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dreamlands:toasted_marshmallow_on_a_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_toasted_marshmallow": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:sugar"
+              "dreamlands:toasted_marshmallow"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "dreamlands:marshmallow"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sugar",
+      "has_toasted_marshmallow",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dreamlands:marshmallow"
+      "dreamlands:toasted_marshmallow_on_a_stick"
     ]
   },
   "sends_telemetry_event": false

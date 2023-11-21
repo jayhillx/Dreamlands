@@ -17,11 +17,16 @@ public class DreamTab {
             output.accept(DreamItems.EVERGREEN_PLANKS.get());
             output.accept(DreamItems.ETHEREAL_PLANKS.get());
             output.accept(DreamItems.CANDY_PLANKS.get());
+            output.accept(DreamItems.EBONY_PLANKS.get());
+            output.accept(DreamItems.DEAD_PLANKS.get());
+            output.accept(DreamItems.BLOODWOOD_PLANKS.get());
             output.accept(DreamItems.DREAMY_MUSHROOM.get());
             output.accept(DreamItems.DREAMY_MUSHROOM_SOUP.get());
             output.accept(DreamItems.MARSHMALLOW.get());
             output.accept(DreamItems.TOASTED_MARSHMALLOW.get());
             output.accept(DreamItems.BURNT_MARSHMALLOW.get());
+            output.accept(DreamItems.MARSHMALLOW_ON_A_STICK.get());
+            output.accept(DreamItems.SMORE.get());
         }).build();
     }
 

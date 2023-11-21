@@ -15,8 +15,8 @@ public class DreamVanillaCompat {
         /** Leaves, Saplings & Food - 0.3 | Flower Leaves - 0.6 | Flowers - 0.65 */
         public static void registerCompostables() {
             BlockDataUtils.compostable(DreamItems.MARSHMALLOW.get(), 0.3F);
-            BlockDataUtils.compostable(DreamItems.TOASTED_MARSHMALLOW.get(), 0.6F);
-            BlockDataUtils.compostable(DreamItems.BURNT_MARSHMALLOW.get(), 0.1F);
+            BlockDataUtils.compostable(DreamItems.TOASTED_MARSHMALLOW.get(), 0.3F);
+            BlockDataUtils.compostable(DreamItems.BURNT_MARSHMALLOW.get(), 0.3F);
             BlockDataUtils.compostable(DreamItems.DREAMY_MUSHROOM.get(), 0.45F);
         }
     }

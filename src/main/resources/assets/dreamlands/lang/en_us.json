@@ -10,5 +10,9 @@
 
   "item.dreamlands.marshmallow": "Marshmallow",
   "item.dreamlands.toasted_marshmallow": "Toasted Marshmallow",
-  "item.dreamlands.burnt_marshmallow": "Burnt Marshmallow"
+  "item.dreamlands.burnt_marshmallow": "Burnt Marshmallow",
+  "item.dreamlands.marshmallow_on_a_stick": "Marshmallow on a Stick",
+  "item.dreamlands.toasted_marshmallow_on_a_stick": "Toasted Marshmallow on a Stick",
+  "item.dreamlands.burnt_marshmallow_on_a_stick": "Burnt Marshmallow on a Stick",
+  "item.dreamlands.smore": "S'more"
 }

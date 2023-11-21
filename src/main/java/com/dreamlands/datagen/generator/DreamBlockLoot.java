@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class DreamBlockLoot extends BlockLootSubProvider {
-    private static final Set<Item> EXPLOSION_RESISTANT = Stream.of(DreamItems.BURNT_MARSHMALLOW.get()).map(ItemLike::asItem).collect(Collectors.toSet());
+    private static final Set<Item> EXPLOSION_RESISTANT = Stream.of(DreamItems.MARSHMALLOW.get()).map(ItemLike::asItem).collect(Collectors.toSet());
 
     public DreamBlockLoot() {
         super(EXPLOSION_RESISTANT, FeatureFlags.REGISTRY.allFlags());
