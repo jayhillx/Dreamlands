@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "dreamlands:block/evergreen_door_bottom",
+    "top": "dreamlands:block/evergreen_door_top"
+  }
+}

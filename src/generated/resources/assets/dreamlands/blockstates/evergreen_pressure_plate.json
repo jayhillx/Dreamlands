@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "dreamlands:block/evergreen_pressure_plate"
+    },
+    "powered=true": {
+      "model": "dreamlands:block/evergreen_pressure_plate_down"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamlands:block/candy_slab"
+    },
+    "type=double": {
+      "model": "dreamlands:block/candy_planks"
+    },
+    "type=top": {
+      "model": "dreamlands:block/candy_slab_top"
+    }
+  }
+}

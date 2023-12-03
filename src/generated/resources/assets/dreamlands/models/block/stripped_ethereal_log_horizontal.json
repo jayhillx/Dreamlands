@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "dreamlands:block/stripped_ethereal_log_top",
+    "side": "dreamlands:block/stripped_ethereal_log"
+  }
+}

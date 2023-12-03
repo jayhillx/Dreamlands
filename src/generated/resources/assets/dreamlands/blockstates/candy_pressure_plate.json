@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "dreamlands:block/candy_pressure_plate"
+    },
+    "powered=true": {
+      "model": "dreamlands:block/candy_pressure_plate_down"
+    }
+  }
+}

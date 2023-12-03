@@ -1,5 +1,6 @@
 package com.dreamlands.common.biome;
 
+import com.dreamlands.init.DreamBiomes;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.util.Mth;
@@ -24,7 +25,7 @@ public interface BiomeTemplate {
         Climate.Parameter range = Climate.Parameter.span(-1.0F, 1.0F);
 
         return MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(List.of(
-                Pair.of(new Climate.ParameterPoint(Climate.Parameter.point(0.0F), range, range, range, range, range, 0), biomes.getOrThrow(Biomes.PLAINS))
+                Pair.of(new Climate.ParameterPoint(Climate.Parameter.point(0.0F), range, range, range, range, range, 0), biomes.getOrThrow(DreamBiomes.EVERGREEN_FOREST))
         )));
     }
 

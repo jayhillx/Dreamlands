@@ -1,8 +1,7 @@
 package com.dreamlands;
 
-import com.dreamlands.common.capability.CapabilityHandler;
+import com.dreamlands.common.block.state.DreamWoodTypes;
 import com.dreamlands.common.event.CampfireEvents;
-import com.dreamlands.common.event.SleepEvents;
 import com.dreamlands.init.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -22,8 +21,9 @@ public class Dreamlands {
         return new ResourceLocation(modId, path);
     }
 
-    public static <T> ResourceKey<T> createKey(ResourceKey<Registry<T>> registry, String name) {
-        return ResourceKey.create(registry, modLoc(name));
+    /** @param <T> given registry, i.e. Registries.BIOMES. */
+    public static <T> ResourceKey<T> createKey(ResourceKey<Registry<T>> registry, String path) {
+        return ResourceKey.create(registry, new ResourceLocation(modId, path));
     }
 
     public Dreamlands() {
@@ -32,12 +32,11 @@ public class Dreamlands {
         bus.addListener(this::clientSetup);
 
         DreamBlocks.BLOCKS.register(bus);
+        DreamBlockEntities.BLOCK_ENTITIES.register(bus);
         DreamItems.ITEMS.register(bus);
         DreamTab.CREATIVE_TABS.register(bus);
 
-        MinecraftForge.EVENT_BUS.register(new SleepEvents());
         MinecraftForge.EVENT_BUS.register(new CampfireEvents());
-        MinecraftForge.EVENT_BUS.register(new CapabilityHandler());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -48,7 +47,10 @@ public class Dreamlands {
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            DreamVanillaCompat.Client.registerRenderLayers();
+            DreamWoodTypes.registerWoodTypes();
+        });
     }
 
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "dreamlands:block/evergreen_planks"
+  }
+}

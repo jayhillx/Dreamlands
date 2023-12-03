@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "dreamlands:block/evergreen_door_bottom",
+    "top": "dreamlands:block/evergreen_door_top"
+  }
+}

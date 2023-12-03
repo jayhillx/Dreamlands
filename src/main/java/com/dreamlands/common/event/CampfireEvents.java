@@ -1,6 +1,5 @@
 package com.dreamlands.common.event;
 
-import com.dreamlands.common.item.MarshmallowOnStickItem;
 import com.dreamlands.init.DreamItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
@@ -22,7 +21,7 @@ public class CampfireEvents {
         Player player = event.player;
         ItemStack stack = player.getItemInHand(player.getUsedItemHand());
 
-        if (event.phase == TickEvent.Phase.START && stack.getItem() instanceof MarshmallowOnStickItem) {
+        if (event.phase == TickEvent.Phase.START && stack.is(DreamItems.MARSHMALLOW_ON_A_STICK.get())) {
             Optional<BlockPos> campfirePos = this.findNearestCampfire(player, (state) -> state.is(Blocks.CAMPFIRE));
 
             if (campfirePos.isPresent()) {

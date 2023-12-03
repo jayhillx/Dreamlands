@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "dreamlands:block/candy_door_bottom",
+    "top": "dreamlands:block/candy_door_top"
+  }
+}

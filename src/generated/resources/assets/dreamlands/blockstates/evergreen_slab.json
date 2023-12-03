@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamlands:block/evergreen_slab"
+    },
+    "type=double": {
+      "model": "dreamlands:block/evergreen_planks"
+    },
+    "type=top": {
+      "model": "dreamlands:block/evergreen_slab_top"
+    }
+  }
+}

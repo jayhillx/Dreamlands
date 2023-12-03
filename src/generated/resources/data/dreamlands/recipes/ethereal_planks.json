@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "dreamlands:ethereal_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "dreamlands:ethereal_planks"
+  }
+}

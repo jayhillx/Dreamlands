@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "dreamlands:block/stripped_evergreen_log_top",
+    "side": "dreamlands:block/stripped_evergreen_log"
+  }
+}

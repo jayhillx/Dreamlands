@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "dreamlands:block/evergreen_planks",
+    "side": "dreamlands:block/evergreen_planks",
+    "top": "dreamlands:block/evergreen_planks"
+  }
+}

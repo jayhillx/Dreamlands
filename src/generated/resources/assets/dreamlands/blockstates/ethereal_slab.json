@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamlands:block/ethereal_slab"
+    },
+    "type=double": {
+      "model": "dreamlands:block/ethereal_planks"
+    },
+    "type=top": {
+      "model": "dreamlands:block/ethereal_slab_top"
+    }
+  }
+}

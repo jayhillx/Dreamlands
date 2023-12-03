@@ -20,6 +20,7 @@ public class DreamyMushroomBlock extends Block {
         super(properties);
     }
 
+    @Nonnull
     public VoxelShape getShape(@Nonnull BlockState state, @Nonnull BlockGetter getter, @Nonnull BlockPos pos, @Nonnull CollisionContext context) {
         return SHAPE;
     }
@@ -57,7 +58,7 @@ public class DreamyMushroomBlock extends Block {
         if (belowState.is(BlockTags.MUSHROOM_GROW_BLOCK)) {
             return true;
         } else {
-            return reader.getRawBrightness(pos, 0) < 13;
+            return reader.getRawBrightness(pos, 0) < 8;
         }
     }
 
