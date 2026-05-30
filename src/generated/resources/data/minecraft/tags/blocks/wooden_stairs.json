@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_stairs",
     "dreamlands:evergreen_stairs",
     "dreamlands:ethereal_stairs",
-    "dreamlands:candy_stairs"
+    "dreamlands:candy_stairs",
+    "dreamlands:wisteria_stairs",
+    "dreamlands:mystical_stairs",
+    "dreamlands:mushroom_stairs"
   ]
 }

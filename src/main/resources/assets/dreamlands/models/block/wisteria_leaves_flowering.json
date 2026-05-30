@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "bottom": "dreamlands:block/wisteria_blossoms",
+    "side": "dreamlands:block/wisteria_leaves_flowering",
+    "top": "dreamlands:block/wisteria_leaves"
+  }
+}

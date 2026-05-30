@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_fence_gate",
     "dreamlands:evergreen_fence_gate",
     "dreamlands:ethereal_fence_gate",
-    "dreamlands:candy_fence_gate"
+    "dreamlands:candy_fence_gate",
+    "dreamlands:wisteria_fence_gate",
+    "dreamlands:mystical_fence_gate",
+    "dreamlands:mushroom_fence_gate"
   ]
 }

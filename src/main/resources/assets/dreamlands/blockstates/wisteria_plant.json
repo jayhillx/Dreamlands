@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "leafy=false": {
+      "model": "dreamlands:block/wisteria_plant"
+    },
+    "leafy=true": {
+      "model": "dreamlands:block/wisteria_plant_leafy"
+    }
+  }
+}

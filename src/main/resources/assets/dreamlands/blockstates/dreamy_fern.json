@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dreamlands:block/dreamy_fern"
+      },
+      {
+        "model": "dreamlands:block/dreamy_fern",
+        "y": 90
+      },
+      {
+        "model": "dreamlands:block/dreamy_fern",
+        "y": 180
+      },
+      {
+        "model": "dreamlands:block/dreamy_fern",
+        "y": 270
+      }
+    ]
+  }
+}

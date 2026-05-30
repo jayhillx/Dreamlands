@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dreamlands:block/dreamstone",
+    "side": "dreamlands:block/dreamstone",
+    "top": "dreamlands:block/dreamstone"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "dreamlands:block/template_foxglove_bottom",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "overlay": "dreamlands:block/pink_foxglove_overlay",
+    "plant": "dreamlands:block/pink_foxglove_plant"
+  }
+}

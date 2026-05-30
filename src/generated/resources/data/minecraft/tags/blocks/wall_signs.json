@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_wall_sign",
     "dreamlands:evergreen_wall_sign",
     "dreamlands:ethereal_wall_sign",
-    "dreamlands:candy_wall_sign"
+    "dreamlands:candy_wall_sign",
+    "dreamlands:wisteria_wall_sign",
+    "dreamlands:mystical_wall_sign",
+    "dreamlands:mushroom_wall_sign"
   ]
 }

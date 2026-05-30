@@ -1,0 +1,8 @@
+{
+  "parent": "dreamlands:block/template_bushy_leaves",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "all": "dreamlands:block/mystical_leaves_flowering",
+    "bushy": "dreamlands:block/mystical_leaves_flowering_bushy"
+  }
+}

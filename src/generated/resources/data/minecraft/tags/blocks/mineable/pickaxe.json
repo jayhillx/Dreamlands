@@ -1,0 +1,28 @@
+{
+  "values": [
+    "dreamlands:dreamstone",
+    "dreamlands:dreamstone_stairs",
+    "dreamlands:dreamstone_slab",
+    "dreamlands:dreamstone_pressure_plate",
+    "dreamlands:dreamstone_button",
+    "dreamlands:dreamstone_wall",
+    "dreamlands:cobbled_dreamstone",
+    "dreamlands:cobbled_dreamstone_stairs",
+    "dreamlands:cobbled_dreamstone_slab",
+    "dreamlands:cobbled_dreamstone_wall",
+    "dreamlands:mossy_cobbled_dreamstone",
+    "dreamlands:mossy_cobbled_dreamstone_stairs",
+    "dreamlands:mossy_cobbled_dreamstone_slab",
+    "dreamlands:mossy_cobbled_dreamstone_wall",
+    "dreamlands:dreamstone_bricks",
+    "dreamlands:dreamstone_brick_stairs",
+    "dreamlands:dreamstone_brick_slab",
+    "dreamlands:dreamstone_brick_wall",
+    "dreamlands:cracked_dreamstone_bricks",
+    "dreamlands:chiseled_dreamstone_bricks",
+    "dreamlands:mossy_dreamstone_bricks",
+    "dreamlands:mossy_dreamstone_stairs",
+    "dreamlands:mossy_dreamstone_brick_slab",
+    "dreamlands:mossy_dreamstone_brick_wall"
+  ]
+}

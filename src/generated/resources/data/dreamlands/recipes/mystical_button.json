@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "dreamlands:mystical_planks"
+    }
+  ],
+  "result": {
+    "item": "dreamlands:mystical_button"
+  }
+}

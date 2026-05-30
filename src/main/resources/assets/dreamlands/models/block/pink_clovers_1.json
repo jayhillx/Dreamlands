@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_clover_1",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flowerbed": "dreamlands:block/pink_clovers"
+  }
+}

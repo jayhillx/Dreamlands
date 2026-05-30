@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "smore",
   "ingredients": [
     {
-      "item": "dreamlands:toasted_marshmallow"
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "dreamlands:marshmallow"
     },
     {
       "item": "minecraft:cocoa_beans"
-    },
-    {
-      "item": "minecraft:bread"
     }
   ],
   "result": {

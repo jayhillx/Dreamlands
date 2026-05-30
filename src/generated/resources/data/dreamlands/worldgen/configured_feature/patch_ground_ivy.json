@@ -1,0 +1,17 @@
+{
+  "type": "dreamlands:clover_patch",
+  "config": {
+    "block_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:ground_ivy",
+        "Properties": {
+          "facing": "north",
+          "flower_amount": "1"
+        }
+      }
+    },
+    "radius": 5,
+    "tries": 128
+  }
+}

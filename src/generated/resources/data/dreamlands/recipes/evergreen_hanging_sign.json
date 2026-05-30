@@ -4,7 +4,7 @@
   "group": "hanging_sign",
   "key": {
     "#": {
-      "item": "dreamlands:stripped_evergreen_log"
+      "item": "dreamlands:evergreen_hanging_sign"
     },
     "X": {
       "item": "minecraft:chain"

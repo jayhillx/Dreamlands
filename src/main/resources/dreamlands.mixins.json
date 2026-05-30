@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.mystanica.dreamlands.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "dreamlands.refmap.json",
+  "client": [
+    "client.DeathScreenMixins"
+  ],
+  "mixins": [
+    "CombatTrackerMixins",
+    "LivingEntityMixins"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.4"
+}

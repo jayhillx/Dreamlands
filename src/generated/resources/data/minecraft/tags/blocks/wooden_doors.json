@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_door",
     "dreamlands:evergreen_door",
     "dreamlands:ethereal_door",
-    "dreamlands:candy_door"
+    "dreamlands:candy_door",
+    "dreamlands:wisteria_door",
+    "dreamlands:mystical_door",
+    "dreamlands:mushroom_door"
   ]
 }

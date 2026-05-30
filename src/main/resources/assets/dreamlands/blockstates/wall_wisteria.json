@@ -1,0 +1,198 @@
+{
+  "multipart": [
+    {
+      "when": { "shape": "center", "connector_top": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_top" }
+    },
+    {
+      "when": { "shape": "center", "connector_top": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_top", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_top": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_top", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_top": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_top", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_bottom": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_bottom" }
+    },
+    {
+      "when": { "shape": "center", "connector_bottom": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_bottom", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_bottom": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_bottom", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_bottom": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_bottom", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_left": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_left" }
+    },
+    {
+      "when": { "shape": "center", "connector_left": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_left", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_left": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_left", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_left": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_left", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_right": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_right" }
+    },
+    {
+      "when": { "shape": "center", "connector_right": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_right", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_right": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_right", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "center", "connector_right": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_center_connector_right", "y": 270, "uvlock": true }
+    },
+
+    {
+      "when": { "shape": "top", "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top" }
+    },
+    {
+      "when": { "shape": "top", "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "connector_left": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_left" }
+    },
+    {
+      "when": { "shape": "top", "connector_left": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_left", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "connector_left": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_left", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "connector_left": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_left", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "connector_right": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_right" }
+    },
+    {
+      "when": { "shape": "top", "connector_right": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_right", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "connector_right": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_right", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "top", "connector_right": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_top_connector_right", "y": 270, "uvlock": true }
+    },
+
+    {
+      "when": { "shape": "bottom", "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom" }
+    },
+    {
+      "when": { "shape": "bottom", "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "connector_left": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_left" }
+    },
+    {
+      "when": { "shape": "bottom", "connector_left": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_left", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "connector_left": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_left", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "connector_left": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_left", "y": 270, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "connector_right": true, "facing": "north" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_right" }
+    },
+    {
+      "when": { "shape": "bottom", "connector_right": true, "facing": "east" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_right", "y": 90, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "connector_right": true, "facing": "south" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_right", "y": 180, "uvlock": true }
+    },
+    {
+      "when": { "shape": "bottom", "connector_right": true, "facing": "west" },
+      "apply": { "model": "dreamlands:block/wall_wisteria_bottom_connector_right", "y": 270, "uvlock": true }
+    }
+  ],
+
+  "variants": {
+    "shape=center_left,facing=north": { "model": "dreamlands:block/wall_wisteria_center_left" },
+    "shape=center_left,facing=east": { "model": "dreamlands:block/wall_wisteria_center_left", "y": 90 },
+    "shape=center_left,facing=south": { "model": "dreamlands:block/wall_wisteria_center_left", "y": 180 },
+    "shape=center_left,facing=west": { "model": "dreamlands:block/wall_wisteria_center_left", "y": 270 },
+
+    "shape=center_right,facing=north": { "model": "dreamlands:block/wall_wisteria_center_right" },
+    "shape=center_right,facing=east": { "model": "dreamlands:block/wall_wisteria_center_right", "y": 90 },
+    "shape=center_right,facing=south": { "model": "dreamlands:block/wall_wisteria_center_right", "y": 180 },
+    "shape=center_right,facing=west": { "model": "dreamlands:block/wall_wisteria_center_right", "y": 270 },
+
+    "shape=top_left,facing=north": { "model": "dreamlands:block/wall_wisteria_top_left" },
+    "shape=top_left,facing=east": { "model": "dreamlands:block/wall_wisteria_top_left", "y": 90 },
+    "shape=top_left,facing=south": { "model": "dreamlands:block/wall_wisteria_top_left", "y": 180 },
+    "shape=top_left,facing=west": { "model": "dreamlands:block/wall_wisteria_top_left", "y": 270 },
+
+    "shape=top_right,facing=north": { "model": "dreamlands:block/wall_wisteria_top_right" },
+    "shape=top_right,facing=east": { "model": "dreamlands:block/wall_wisteria_top_right", "y": 90 },
+    "shape=top_right,facing=south": { "model": "dreamlands:block/wall_wisteria_top_right", "y": 180 },
+    "shape=top_right,facing=west": { "model": "dreamlands:block/wall_wisteria_top_right", "y": 270 },
+
+    "shape=bottom_left,facing=north": { "model": "dreamlands:block/wall_wisteria_bottom_left" },
+    "shape=bottom_left,facing=east": { "model": "dreamlands:block/wall_wisteria_bottom_left", "y": 90 },
+    "shape=bottom_left,facing=south": { "model": "dreamlands:block/wall_wisteria_bottom_left", "y": 180 },
+    "shape=bottom_left,facing=west": { "model": "dreamlands:block/wall_wisteria_bottom_left", "y": 270 },
+
+    "shape=bottom_right,facing=north": { "model": "dreamlands:block/wall_wisteria_bottom_right" },
+    "shape=bottom_right,facing=east": { "model": "dreamlands:block/wall_wisteria_bottom_right", "y": 90 },
+    "shape=bottom_right,facing=south": { "model": "dreamlands:block/wall_wisteria_bottom_right", "y": 180 },
+    "shape=bottom_right,facing=west": { "model": "dreamlands:block/wall_wisteria_bottom_right", "y": 270 }
+  }
+}

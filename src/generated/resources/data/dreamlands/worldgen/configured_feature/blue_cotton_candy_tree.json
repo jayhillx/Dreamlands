@@ -1,0 +1,44 @@
+{
+  "type": "dreamlands:cotton_candy_tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:dreamy_dirt"
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:blue_cotton_candy_block",
+        "Properties": {
+          "distance": "12",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "large": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:candy_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "trunk_shape": {
+      "base_height": 7,
+      "double_trunk": false,
+      "rand_height": 7
+    }
+  }
+}

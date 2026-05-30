@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "amount=1,facing=east,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_1",
+      "y": 90
+    },
+    "amount=1,facing=east,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_1",
+      "y": 90
+    },
+    "amount=1,facing=north,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_1"
+    },
+    "amount=1,facing=north,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_1"
+    },
+    "amount=1,facing=south,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_1",
+      "y": 180
+    },
+    "amount=1,facing=south,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_1",
+      "y": 180
+    },
+    "amount=1,facing=west,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_1",
+      "y": 270
+    },
+    "amount=1,facing=west,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_1",
+      "y": 270
+    },
+    "amount=2,facing=east,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_2",
+      "y": 90
+    },
+    "amount=2,facing=east,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_2",
+      "y": 90
+    },
+    "amount=2,facing=north,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_2"
+    },
+    "amount=2,facing=north,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_2"
+    },
+    "amount=2,facing=south,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_2",
+      "y": 180
+    },
+    "amount=2,facing=south,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_2",
+      "y": 180
+    },
+    "amount=2,facing=west,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_2",
+      "y": 270
+    },
+    "amount=2,facing=west,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_2",
+      "y": 270
+    },
+    "amount=3,facing=east,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_3",
+      "y": 90
+    },
+    "amount=3,facing=east,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_3",
+      "y": 90
+    },
+    "amount=3,facing=north,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_3"
+    },
+    "amount=3,facing=north,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_3"
+    },
+    "amount=3,facing=south,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_3",
+      "y": 180
+    },
+    "amount=3,facing=south,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_3",
+      "y": 180
+    },
+    "amount=3,facing=west,shelf=false": {
+      "model": "dreamlands:block/dreamy_mushroom_3",
+      "y": 270
+    },
+    "amount=3,facing=west,shelf=true": {
+      "model": "dreamlands:block/dreamy_mushroom_shelf_3",
+      "y": 270
+    }
+  }
+}

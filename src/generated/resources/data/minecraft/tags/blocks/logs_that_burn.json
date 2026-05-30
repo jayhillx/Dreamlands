@@ -1,7 +1,11 @@
 {
   "values": [
+    "#dreamlands:dreamy_logs",
     "#dreamlands:evergreen_logs",
     "#dreamlands:ethereal_logs",
-    "#dreamlands:candy_logs"
+    "#dreamlands:candy_logs",
+    "#dreamlands:wisteria_logs",
+    "#dreamlands:mystical_logs",
+    "#dreamlands:mushroom_stems"
   ]
 }

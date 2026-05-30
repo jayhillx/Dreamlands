@@ -1,0 +1,10 @@
+{
+  "parent": "dreamlands:block/template_bushy_leaves0_variant",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "top": "dreamlands:block/fairy_rose_bush_flowers",
+    "side": "dreamlands:block/fairy_rose_bush_leaves_flowering",
+    "bottom": "dreamlands:block/fairy_rose_bush_leaves",
+    "bushy": "dreamlands:block/fairy_rose_bush_leaves_flowering_bushy"
+  }
+}

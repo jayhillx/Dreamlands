@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mossy_cobbled_dreamstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dreamlands:mossy_cobbled_dreamstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dreamlands:mossy_cobbled_dreamstone_slab_from_mossy_cobbled_dreamstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_mossy_cobbled_dreamstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dreamlands:mossy_cobbled_dreamstone_slab_from_mossy_cobbled_dreamstone_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

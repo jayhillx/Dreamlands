@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_wisteria",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "dreamlands:block/wisteria_plant_leafy"
+  }
+}

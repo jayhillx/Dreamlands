@@ -1,0 +1,51 @@
+{
+	"parent": "dreamlands:block/template_wall_wisteria",
+	"textures": {
+		"vine": "dreamlands:block/wall_wisteria_vine_bottom_right_connector",
+		"flower": "dreamlands:block/wall_wisteria",
+		"particle": "dreamlands:block/wall_wisteria"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 15.9],
+			"to": [16, 16, 15.9],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#vine"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#vine"}
+			}
+		},
+		{
+			"from": [1, 6, 11.9],
+			"to": [4, 13, 14.9],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [7, 0, 10, 7], "texture": "#flower"},
+				"east": {"uv": [7, 0, 10, 7], "texture": "#flower"},
+				"south": {"uv": [7, 0, 10, 7], "texture": "#flower"},
+				"west": {"uv": [7, 0, 10, 7], "texture": "#flower"},
+				"up": {"uv": [10, 5, 7, 2], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [-0.5, 5, 13.4],
+			"to": [5.5, 14, 13.4],
+			"rotation": {"angle": 45, "axis": "y", "origin": [2.5, 12, 13.4]},
+			"shade": false,
+			"faces": {
+				"north": {"uv": [6, 2, 0, 11], "texture": "#flower"},
+				"south": {"uv": [6, 2, 0, 11], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [2.5, 5, 10.4],
+			"to": [2.5, 14, 16.4],
+			"rotation": {"angle": 45, "axis": "y", "origin": [2.5, 12, 13.4]},
+			"shade": false,
+			"faces": {
+				"east": {"uv": [6, 2, 0, 11], "texture": "#flower"},
+				"west": {"uv": [6, 2, 0, 11], "texture": "#flower"}
+			}
+		}
+	]
+}

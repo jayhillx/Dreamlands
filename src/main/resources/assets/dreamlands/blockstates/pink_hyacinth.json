@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=east,flower_amount=1": {
+      "model": "dreamlands:block/pink_hyacinth_1",
+      "y": 90
+    },
+    "facing=east,flower_amount=2": {
+      "model": "dreamlands:block/pink_hyacinth_2",
+      "y": 90
+    },
+    "facing=east,flower_amount=3": {
+      "model": "dreamlands:block/pink_hyacinth_3",
+      "y": 90
+    },
+    "facing=north,flower_amount=1": {
+      "model": "dreamlands:block/pink_hyacinth_1"
+    },
+    "facing=north,flower_amount=2": {
+      "model": "dreamlands:block/pink_hyacinth_2"
+    },
+    "facing=north,flower_amount=3": {
+      "model": "dreamlands:block/pink_hyacinth_3"
+    },
+    "facing=south,flower_amount=1": {
+      "model": "dreamlands:block/pink_hyacinth_1",
+      "y": 180
+    },
+    "facing=south,flower_amount=2": {
+      "model": "dreamlands:block/pink_hyacinth_2",
+      "y": 180
+    },
+    "facing=south,flower_amount=3": {
+      "model": "dreamlands:block/pink_hyacinth_3",
+      "y": 180
+    },
+    "facing=west,flower_amount=1": {
+      "model": "dreamlands:block/pink_hyacinth_1",
+      "y": 270
+    },
+    "facing=west,flower_amount=2": {
+      "model": "dreamlands:block/pink_hyacinth_2",
+      "y": 270
+    },
+    "facing=west,flower_amount=3": {
+      "model": "dreamlands:block/pink_hyacinth_3",
+      "y": 270
+    }
+  }
+}

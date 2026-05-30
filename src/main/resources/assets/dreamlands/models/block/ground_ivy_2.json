@@ -1,0 +1,8 @@
+{
+  "parent": "dreamlands:block/template_flowerbed_2",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flowerbed": "dreamlands:block/ground_ivy",
+    "stem": "dreamlands:block/ground_ivy_stem"
+  }
+}

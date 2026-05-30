@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "dreamlands:block/tall_forest_grass_bottom"
+    },
+    "half=upper": {
+      "model": "dreamlands:block/tall_forest_grass_top"
+    }
+  }
+}

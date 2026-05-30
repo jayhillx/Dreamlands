@@ -1,0 +1,8 @@
+{
+  "parent": "dreamlands:block/template_flowerbed_4",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flowerbed": "dreamlands:block/periwinkle",
+    "stem": "dreamlands:block/periwinkle_stem"
+  }
+}

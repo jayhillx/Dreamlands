@@ -1,30 +1,66 @@
 {
   "carvers": {},
-  "downfall": 0.5,
+  "downfall": 0.4,
   "effects": {
-    "fog_color": 12638463,
+    "fog_color": 13097419,
+    "foliage_color": 7962936,
+    "grass_color": 6979906,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 7842047,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "sky_color": 9883614,
+    "water_color": 3775899,
+    "water_fog_color": 5801581
   },
-  "features": [],
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "dreamlands:trees_evergreen_forest",
+      "dreamlands:shrubs_evergreen_forest",
+      "dreamlands:mushrooms_toadstool",
+      "dreamlands:patch_toadstool",
+      "dreamlands:patch_forest_moss",
+      "dreamlands:patch_forest_mushroom",
+      "dreamlands:patch_clovers",
+      "dreamlands:patch_dreamy_grass",
+      "dreamlands:patch_tall_dreamy_grass"
+    ]
+  ],
   "has_precipitation": true,
   "spawn_costs": {},
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [],
+    "creature": [
+      {
+        "type": "dreamlands:fawn",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 40
+      },
+      {
+        "type": "dreamlands:forest_fox",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 40
+      }
+    ],
     "misc": [],
     "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.95
+  "temperature": 0.5
 }

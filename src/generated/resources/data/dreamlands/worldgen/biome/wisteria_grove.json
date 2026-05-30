@@ -1,0 +1,59 @@
+{
+  "carvers": {},
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 12247002,
+    "foliage_color": 9020015,
+    "grass_color": 9020015,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 9883614,
+    "water_color": 7319724,
+    "water_fog_color": 11903205
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "dreamlands:trees_wisteria_grove",
+      "dreamlands:flower_magenta_hyacinth",
+      "dreamlands:flower_purple_hyacinth",
+      "dreamlands:flower_periwinkle",
+      "dreamlands:flower_violets",
+      "dreamlands:patch_ground_ivy",
+      "dreamlands:patch_dreamy_grass",
+      "dreamlands:patch_tall_dreamy_grass"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:rabbit",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 100
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.7
+}

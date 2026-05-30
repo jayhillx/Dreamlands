@@ -1,0 +1,41 @@
+{
+	"parent": "minecraft:block/block",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"particle": "#bushy"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#bottom", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-8, -8, 8],
+			"to": [24, 24, 8],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#bushy"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#bushy"}
+			}
+		},
+		{
+			"from": [8, -8, -8],
+			"to": [8, 24, 24],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#bushy"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#bushy"}
+			}
+		}
+	]
+}

@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_hanging_sign",
     "dreamlands:evergreen_hanging_sign",
     "dreamlands:ethereal_hanging_sign",
-    "dreamlands:candy_hanging_sign"
+    "dreamlands:candy_hanging_sign",
+    "dreamlands:wisteria_hanging_sign",
+    "dreamlands:mystical_hanging_sign",
+    "dreamlands:mushroom_hanging_sign"
   ]
 }

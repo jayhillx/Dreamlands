@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "dreamlands:pink_mushroom_checked",
+    "features": [
+      {
+        "chance": 0.3,
+        "feature": "dreamlands:pink_mushroom_checked"
+      },
+      {
+        "chance": 0.7,
+        "feature": "dreamlands:large_pink_mushroom_checked"
+      }
+    ]
+  }
+}

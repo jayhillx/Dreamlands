@@ -1,0 +1,30 @@
+{
+  "parent": "dreamlands:dreamlands/enter_dream",
+  "criteria": {
+    "woken_up_from_sleep": {
+      "conditions": {},
+      "trigger": "dreamlands:woken_up_from_sleep"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.dreamlands.woken_up_from_sleep.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:pink_bed"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.dreamlands.woken_up_from_sleep.title"
+    }
+  },
+  "requirements": [
+    [
+      "woken_up_from_sleep"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

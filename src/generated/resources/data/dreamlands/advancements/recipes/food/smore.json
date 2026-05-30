@@ -1,28 +1,28 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "dreamlands:smore"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_toasted_marshmallow": {
+    "has_marshmallow": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dreamlands:toasted_marshmallow"
+              "dreamlands:marshmallow"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dreamlands:smore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_toasted_marshmallow",
+      "has_marshmallow",
       "has_the_recipe"
     ]
   ],

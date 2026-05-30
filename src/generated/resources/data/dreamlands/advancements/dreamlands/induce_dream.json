@@ -1,0 +1,30 @@
+{
+  "parent": "dreamlands:dreamlands/root",
+  "criteria": {
+    "induce_dream": {
+      "conditions": {},
+      "trigger": "dreamlands:induce_dream"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.dreamlands.induce_dream.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dreamlands:smore"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.dreamlands.induce_dream.title"
+    }
+  },
+  "requirements": [
+    [
+      "induce_dream"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

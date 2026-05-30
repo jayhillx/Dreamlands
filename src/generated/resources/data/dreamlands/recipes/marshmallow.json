@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "food",
   "key": {
     "#": {
       "item": "minecraft:sugar"

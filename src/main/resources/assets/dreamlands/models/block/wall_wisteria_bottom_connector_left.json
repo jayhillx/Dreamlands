@@ -1,0 +1,85 @@
+{
+	"parent": "dreamlands:block/template_wall_wisteria",
+	"textures": {
+		"vine": "dreamlands:block/wall_wisteria_vine_bottom_left_connector",
+		"flower": "dreamlands:block/wall_wisteria",
+		"particle": "dreamlands:block/wall_wisteria"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 15.9],
+			"to": [16, 16, 15.9],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#vine"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#vine"}
+			}
+		},
+		{
+			"from": [12, 10, 11.3],
+			"to": [15, 15, 14.3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14, 13, 13.3]},
+			"shade": false,
+			"faces": {
+				"north": {"uv": [7, 0, 10, 5], "texture": "#flower"},
+				"east": {"uv": [10, 0, 7, 5], "texture": "#flower"},
+				"south": {"uv": [7, 0, 10, 5], "texture": "#flower"},
+				"west": {"uv": [7, 0, 10, 5], "texture": "#flower"},
+				"up": {"uv": [10, 5, 7, 2], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [10.5, 9, 12.8],
+			"to": [16.5, 16, 12.8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [13.5, 14, 12.8]},
+			"shade": false,
+			"faces": {
+				"north": {"uv": [10, 8, 16, 15], "texture": "#flower"},
+				"south": {"uv": [10, 8, 16, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [13.5, 9, 9.8],
+			"to": [13.5, 16, 15.8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [13.5, 14, 12.8]},
+			"shade": false,
+			"faces": {
+				"east": {"uv": [10, 8, 16, 15], "texture": "#flower"},
+				"west": {"uv": [10, 8, 16, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [11, 3, 11.3],
+			"to": [14, 8, 14.3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13, 6, 13.3]},
+			"shade": false,
+			"faces": {
+				"north": {"uv": [7, 0, 10, 5], "texture": "#flower"},
+				"east": {"uv": [10, 0, 7, 5], "texture": "#flower"},
+				"south": {"uv": [7, 0, 10, 5], "texture": "#flower"},
+				"west": {"uv": [7, 0, 10, 5], "texture": "#flower"},
+				"up": {"uv": [10, 5, 7, 2], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [9.5, 2, 12.8],
+			"to": [15.5, 9, 12.8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [12.5, 7, 12.8]},
+			"shade": false,
+			"faces": {
+				"north": {"uv": [10, 8, 16, 15], "texture": "#flower"},
+				"south": {"uv": [10, 8, 16, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [12.5, 2, 9.8],
+			"to": [12.5, 9, 15.8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [12.5, 7, 12.8]},
+			"shade": false,
+			"faces": {
+				"east": {"uv": [10, 8, 16, 15], "texture": "#flower"},
+				"west": {"uv": [10, 8, 16, 15], "texture": "#flower"}
+			}
+		}
+	]
+}

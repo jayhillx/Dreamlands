@@ -1,0 +1,46 @@
+{
+  "type": "dreamlands:flowering_bush",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:dreamy_dirt"
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:lilac_bush_leaves",
+        "Properties": {
+          "distance": "1",
+          "flowering": "true",
+          "persistent": "true",
+          "snipped": "false",
+          "waterlogged": "true"
+        }
+      }
+    },
+    "large": false,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:dreamy_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "trunk_shape": {
+      "base_height": 1,
+      "double_trunk": false,
+      "rand_height": 1
+    }
+  }
+}

@@ -1,0 +1,23 @@
+package com.mystanica.dreamlands.common.block.entity;
+
+import com.mystanica.dreamlands.init.DreamBlockEntities;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.HangingSignBlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+
+import javax.annotation.Nonnull;
+
+public class DreamHangingSignBlockEntity extends HangingSignBlockEntity {
+
+    public DreamHangingSignBlockEntity(BlockPos pos, BlockState state) {
+        super(pos, state);
+    }
+
+    @Nonnull
+    @Override
+    public BlockEntityType<?> getType() {
+        return DreamBlockEntities.HANGING_SIGN.get();
+    }
+
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamlands:block/dreamstone_slab"
+    },
+    "type=double": {
+      "model": "dreamlands:block/dreamstone"
+    },
+    "type=top": {
+      "model": "dreamlands:block/dreamstone_slab_top"
+    }
+  }
+}

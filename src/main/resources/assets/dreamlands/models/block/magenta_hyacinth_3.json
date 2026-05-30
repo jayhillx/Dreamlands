@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_hyacinth_3",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flower": "dreamlands:block/magenta_hyacinth_flower"
+  }
+}

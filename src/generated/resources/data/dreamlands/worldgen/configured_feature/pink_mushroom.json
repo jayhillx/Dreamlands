@@ -1,0 +1,38 @@
+{
+  "type": "dreamlands:mushroom",
+  "config": {
+    "cap_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:pink_mushroom_block",
+        "Properties": {
+          "down": "false",
+          "east": "true",
+          "north": "true",
+          "south": "true",
+          "up": "true",
+          "west": "true"
+        }
+      }
+    },
+    "cap_radius": 1,
+    "flat": false,
+    "round": true,
+    "stem_height": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 6,
+        "min_inclusive": 3
+      }
+    },
+    "stem_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "dreamlands:mushroom_stem",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

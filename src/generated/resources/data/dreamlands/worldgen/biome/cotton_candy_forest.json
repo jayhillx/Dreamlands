@@ -1,30 +1,55 @@
 {
   "carvers": {},
-  "downfall": 0.5,
+  "downfall": 0.0,
   "effects": {
-    "fog_color": 12638463,
+    "fog_color": 15913457,
+    "foliage_color": 8694636,
+    "grass_color": 8694636,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 7842047,
-    "water_color": 4159204,
-    "water_fog_color": 329011
+    "sky_color": 13101815,
+    "water_color": 7325878,
+    "water_fog_color": 7189423
   },
-  "features": [],
-  "has_precipitation": true,
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "dreamlands:trees_cotton_candy_forest",
+      "dreamlands:flower_pink_hyacinth",
+      "dreamlands:patch_dreamy_grass",
+      "dreamlands:patch_tall_dreamy_grass"
+    ]
+  ],
+  "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [],
+    "creature": [
+      {
+        "type": "dreamlands:cotton_candy_sheep",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 70
+      }
+    ],
     "misc": [],
     "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.95
+  "temperature": 0.8
 }

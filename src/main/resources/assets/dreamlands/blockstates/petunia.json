@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dreamlands:block/petunia"
+      },
+      {
+        "model": "dreamlands:block/petunia_variant"
+      }
+    ]
+  }
+}

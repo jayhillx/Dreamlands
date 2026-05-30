@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_wall_mushroom_1",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "dreamlands:block/toadstool1"
+  }
+}

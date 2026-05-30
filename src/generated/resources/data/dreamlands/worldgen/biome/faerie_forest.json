@@ -1,0 +1,60 @@
+{
+  "carvers": {},
+  "downfall": 0.5,
+  "effects": {
+    "fog_color": 14670317,
+    "foliage_color": 7569731,
+    "grass_color": 7569731,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 9883614,
+    "water_color": 7719644,
+    "water_fog_color": 9985446
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "dreamlands:trees_faerie_forest",
+      "dreamlands:shrubs_faerie_forest",
+      "dreamlands:mushrooms_pink",
+      "dreamlands:flower_pink_foxglove",
+      "dreamlands:patch_pink_mushroom",
+      "dreamlands:patch_forest_moss",
+      "dreamlands:patch_clovers",
+      "dreamlands:patch_dreamy_grass",
+      "dreamlands:patch_tall_dreamy_grass"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:rabbit",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 100
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.6
+}

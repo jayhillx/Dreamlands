@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_planks",
     "dreamlands:evergreen_planks",
     "dreamlands:ethereal_planks",
-    "dreamlands:candy_planks"
+    "dreamlands:candy_planks",
+    "dreamlands:wisteria_planks",
+    "dreamlands:mystical_planks",
+    "dreamlands:mushroom_planks"
   ]
 }

@@ -6,6 +6,36 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
+          "biome": "dreamlands:wilderness",
+          "parameters": {
+            "continentalness": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              -1.0,
+              -0.6
+            ],
+            "weirdness": [
+              -1.0,
+              -0.33
+            ]
+          }
+        },
+        {
           "biome": "dreamlands:evergreen_forest",
           "parameters": {
             "continentalness": [
@@ -25,9 +55,132 @@
               1.0
             ],
             "offset": 0.0,
-            "temperature": 0.0,
+            "temperature": [
+              -0.6,
+              -0.2
+            ],
             "weirdness": [
               -1.0,
+              -0.33
+            ]
+          }
+        },
+        {
+          "biome": "dreamlands:ethereal_forest",
+          "parameters": {
+            "continentalness": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              -0.2,
+              0.2
+            ],
+            "weirdness": [
+              -0.33,
+              0.33
+            ]
+          }
+        },
+        {
+          "biome": "dreamlands:cotton_candy_forest",
+          "parameters": {
+            "continentalness": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              0.2,
+              0.5
+            ],
+            "weirdness": [
+              -0.33,
+              0.33
+            ]
+          }
+        },
+        {
+          "biome": "dreamlands:wisteria_grove",
+          "parameters": {
+            "continentalness": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              0.5,
+              0.8
+            ],
+            "weirdness": [
+              0.33,
+              1.0
+            ]
+          }
+        },
+        {
+          "biome": "dreamlands:faerie_forest",
+          "parameters": {
+            "continentalness": [
+              -1.0,
+              1.0
+            ],
+            "depth": [
+              -1.0,
+              1.0
+            ],
+            "erosion": [
+              -1.0,
+              1.0
+            ],
+            "humidity": [
+              -1.0,
+              1.0
+            ],
+            "offset": 0.0,
+            "temperature": [
+              0.8,
+              1.0
+            ],
+            "weirdness": [
+              0.33,
               1.0
             ]
           }

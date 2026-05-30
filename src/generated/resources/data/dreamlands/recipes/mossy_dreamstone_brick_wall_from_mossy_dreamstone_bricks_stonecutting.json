@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dreamlands:mossy_dreamstone_bricks"
+  },
+  "result": "dreamlands:mossy_dreamstone_brick_wall"
+}

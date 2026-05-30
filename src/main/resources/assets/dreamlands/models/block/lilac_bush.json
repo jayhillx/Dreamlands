@@ -1,0 +1,9 @@
+{
+  "parent": "dreamlands:block/template_bush",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "dreamlands:block/lilac_bush_plant",
+    "side": "dreamlands:block/lilac_bush_side",
+    "top": "dreamlands:block/lilac_bush_top"
+  }
+}

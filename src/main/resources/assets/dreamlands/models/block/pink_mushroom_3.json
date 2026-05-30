@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_mushroom_3",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "dreamlands:block/pink_mushroom1"
+  }
+}

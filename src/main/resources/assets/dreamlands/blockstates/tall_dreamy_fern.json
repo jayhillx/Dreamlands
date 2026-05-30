@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "dreamlands:block/tall_dreamy_fern_bottom"
+    },
+    "half=upper": {
+      "model": "dreamlands:block/tall_dreamy_fern_top"
+    }
+  }
+}

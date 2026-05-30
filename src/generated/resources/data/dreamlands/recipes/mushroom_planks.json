@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "dreamlands:mushroom_stems"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "dreamlands:mushroom_planks"
+  }
+}

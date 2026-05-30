@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "dreamlands:block/wisteria_door_bottom",
+    "top": "dreamlands:block/wisteria_door_top"
+  }
+}

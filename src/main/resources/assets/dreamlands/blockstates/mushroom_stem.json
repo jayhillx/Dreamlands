@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "dreamlands:block/mushroom_stem_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "dreamlands:block/mushroom_stem"
+    },
+    "axis=z": {
+      "model": "dreamlands:block/mushroom_stem_horizontal",
+      "x": 90
+    }
+  }
+}

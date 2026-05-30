@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dreamlands:block/dreamy_grass_block"
+      },
+      {
+        "model": "dreamlands:block/dreamy_grass_block",
+        "y": 90
+      },
+      {
+        "model": "dreamlands:block/dreamy_grass_block",
+        "y": 180
+      },
+      {
+        "model": "dreamlands:block/dreamy_grass_block",
+        "y": 270
+      }
+    ]
+  }
+}

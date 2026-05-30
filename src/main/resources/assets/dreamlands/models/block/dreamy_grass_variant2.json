@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "dreamlands:block/tint/dreamy_grass_variant2_tint"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "slept_in_bed": {
+      "conditions": {},
+      "trigger": "minecraft:slept_in_bed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.dreamlands.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dreamlands:dreamy_mushroom"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.dreamlands.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "slept_in_bed"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

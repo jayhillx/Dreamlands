@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamlands:block/mystical_slab"
+    },
+    "type=double": {
+      "model": "dreamlands:block/mystical_planks"
+    },
+    "type=top": {
+      "model": "dreamlands:block/mystical_slab_top"
+    }
+  }
+}

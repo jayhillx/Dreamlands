@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_trapdoor",
     "dreamlands:evergreen_trapdoor",
     "dreamlands:ethereal_trapdoor",
-    "dreamlands:candy_trapdoor"
+    "dreamlands:candy_trapdoor",
+    "dreamlands:wisteria_trapdoor",
+    "dreamlands:mystical_trapdoor",
+    "dreamlands:mushroom_trapdoor"
   ]
 }

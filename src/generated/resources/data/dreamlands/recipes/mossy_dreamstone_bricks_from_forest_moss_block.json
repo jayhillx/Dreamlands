@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "dreamstone_bricks",
+  "ingredients": [
+    {
+      "item": "dreamlands:dreamstone_bricks"
+    },
+    {
+      "item": "dreamlands:forest_moss_block"
+    }
+  ],
+  "result": {
+    "item": "dreamlands:mossy_dreamstone_bricks"
+  }
+}

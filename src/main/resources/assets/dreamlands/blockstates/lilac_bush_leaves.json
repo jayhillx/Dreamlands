@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "flowering=false,snipped=true": [
+      {
+        "model": "dreamlands:block/lilac_bush_leaves",
+        "weight": 1
+      },
+      {
+        "model": "dreamlands:block/lilac_bush_leaves_variant",
+        "weight": 1
+      }
+    ],
+    "flowering=true,snipped=true": [
+      {
+        "model": "dreamlands:block/lilac_bush_leaves_flowering",
+        "weight": 1
+      },
+      {
+        "model": "dreamlands:block/lilac_bush_leaves_flowering_variant",
+        "weight": 1
+      }
+    ],
+    "flowering=false,snipped=false": [
+      {
+        "model": "dreamlands:block/lilac_bush_leaves_flowering",
+        "weight": 1
+      },
+      {
+        "model": "dreamlands:block/lilac_bush_leaves_flowering_variant",
+        "weight": 1
+      }
+    ],
+    "flowering=true,snipped=false": [
+      {
+        "model": "dreamlands:block/lilac_bush_flowers",
+        "weight": 1
+      },
+      {
+        "model": "dreamlands:block/lilac_bush_flowers_variant",
+        "weight": 1
+      }
+    ]
+  }
+}

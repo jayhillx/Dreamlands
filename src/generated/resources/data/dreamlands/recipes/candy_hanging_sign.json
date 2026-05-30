@@ -4,7 +4,7 @@
   "group": "hanging_sign",
   "key": {
     "#": {
-      "item": "dreamlands:stripped_candy_log"
+      "item": "dreamlands:candy_hanging_sign"
     },
     "X": {
       "item": "minecraft:chain"

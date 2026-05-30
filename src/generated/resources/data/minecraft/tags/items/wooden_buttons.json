@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_button",
     "dreamlands:evergreen_button",
     "dreamlands:ethereal_button",
-    "dreamlands:candy_button"
+    "dreamlands:candy_button",
+    "dreamlands:wisteria_button",
+    "dreamlands:mystical_button",
+    "dreamlands:mushroom_button"
   ]
 }

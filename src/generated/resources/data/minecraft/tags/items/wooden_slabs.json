@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_slab",
     "dreamlands:evergreen_slab",
     "dreamlands:ethereal_slab",
-    "dreamlands:candy_slab"
+    "dreamlands:candy_slab",
+    "dreamlands:wisteria_slab",
+    "dreamlands:mystical_slab",
+    "dreamlands:mushroom_slab"
   ]
 }

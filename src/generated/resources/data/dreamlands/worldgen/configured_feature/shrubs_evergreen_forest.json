@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "dreamlands:forest_shrub_checked",
+    "features": [
+      {
+        "chance": 0.4,
+        "feature": "dreamlands:forest_shrub_checked"
+      },
+      {
+        "chance": 0.5,
+        "feature": "dreamlands:dreamy_shrub_checked"
+      },
+      {
+        "chance": 0.3,
+        "feature": "dreamlands:large_dreamy_shrub_checked"
+      }
+    ]
+  }
+}

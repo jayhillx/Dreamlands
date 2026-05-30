@@ -1,0 +1,30 @@
+{
+  "parent": "dreamlands:dreamlands/induce_dream",
+  "criteria": {
+    "enter_dream": {
+      "conditions": {},
+      "trigger": "dreamlands:enter_dream"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.dreamlands.enter_dream.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dreamlands:wisteria"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.dreamlands.enter_dream.title"
+    }
+  },
+  "requirements": [
+    [
+      "enter_dream"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

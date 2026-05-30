@@ -1,7 +1,11 @@
 {
   "values": [
+    "dreamlands:dreamy_pressure_plate",
     "dreamlands:evergreen_pressure_plate",
     "dreamlands:ethereal_pressure_plate",
-    "dreamlands:candy_pressure_plate"
+    "dreamlands:candy_pressure_plate",
+    "dreamlands:wisteria_pressure_plate",
+    "dreamlands:mystical_pressure_plate",
+    "dreamlands:mushroom_pressure_plate"
   ]
 }

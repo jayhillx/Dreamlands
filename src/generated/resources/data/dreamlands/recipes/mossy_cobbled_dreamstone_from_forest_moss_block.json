@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "cobbled_dreamstone",
+  "ingredients": [
+    {
+      "item": "dreamlands:cobbled_dreamstone"
+    },
+    {
+      "item": "dreamlands:forest_moss_block"
+    }
+  ],
+  "result": {
+    "item": "dreamlands:mossy_cobbled_dreamstone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "flowering=false": {
+      "model": "dreamlands:block/wisteria_leaves"
+    },
+    "flowering=true": {
+      "model": "dreamlands:block/wisteria_leaves_flowering"
+    }
+  }
+}

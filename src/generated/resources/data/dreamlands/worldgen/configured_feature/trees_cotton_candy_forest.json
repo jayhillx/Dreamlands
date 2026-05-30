@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "dreamlands:pink_cotton_candy_tree_checked",
+    "features": [
+      {
+        "chance": 0.4,
+        "feature": "dreamlands:pink_cotton_candy_tree_checked"
+      },
+      {
+        "chance": 0.7,
+        "feature": "dreamlands:blue_cotton_candy_tree_checked"
+      }
+    ]
+  }
+}

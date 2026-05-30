@@ -1,0 +1,9 @@
+{
+  "parent": "dreamlands:block/template_bush",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "dreamlands:block/forest_shrub_plant",
+    "side": "dreamlands:block/forest_shrub_side",
+    "top": "dreamlands:block/forest_shrub_top"
+  }
+}

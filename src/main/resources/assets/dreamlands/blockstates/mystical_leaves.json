@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dreamlands:block/mystical_leaves",
+        "weight": 3
+      },
+      {
+        "model": "dreamlands:block/mystical_leaves_variant",
+        "weight": 3
+      },
+      {
+        "model": "dreamlands:block/mystical_leaves_variant2",
+        "weight": 1
+      }
+    ]
+  }
+}

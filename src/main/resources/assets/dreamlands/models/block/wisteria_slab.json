@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dreamlands:block/wisteria_planks",
+    "side": "dreamlands:block/wisteria_planks",
+    "top": "dreamlands:block/wisteria_planks"
+  }
+}
