@@ -18,7 +18,7 @@ public class DreamBlockEntities {
     public static final RegistryObject<BlockEntityType<DreamSignBlockEntity>> SIGN = BLOCK_ENTITIES.register("sign", () -> {
         return BlockEntityType.Builder.of(DreamSignBlockEntity::new,
                 DreamBlocks.DREAMY_SIGN.get(), DreamBlocks.DREAMY_WALL_SIGN.get(),
-                ///DreamBlocks.ASPEN_SIGN.get(), DreamBlocks.ASPEN_WALL_SIGN.get(),
+                DreamBlocks.ASPEN_SIGN.get(), DreamBlocks.ASPEN_WALL_SIGN.get(),
                 DreamBlocks.EVERGREEN_SIGN.get(), DreamBlocks.EVERGREEN_WALL_SIGN.get(),
                 DreamBlocks.ETHEREAL_SIGN.get(), DreamBlocks.ETHEREAL_WALL_SIGN.get(),
                 DreamBlocks.CANDY_SIGN.get(), DreamBlocks.CANDY_WALL_SIGN.get(),
@@ -38,7 +38,7 @@ public class DreamBlockEntities {
     public static final RegistryObject<BlockEntityType<DreamHangingSignBlockEntity>> HANGING_SIGN = BLOCK_ENTITIES.register("hanging_sign", () -> {
         return BlockEntityType.Builder.of(DreamHangingSignBlockEntity::new,
                 DreamBlocks.DREAMY_HANGING_SIGN.get(), DreamBlocks.DREAMY_WALL_HANGING_SIGN.get(),
-                ///DreamBlocks.ASPEN_HANGING_SIGN.get(), DreamBlocks.ASPEN_WALL_HANGING_SIGN.get(),
+                DreamBlocks.ASPEN_HANGING_SIGN.get(), DreamBlocks.ASPEN_WALL_HANGING_SIGN.get(),
                 DreamBlocks.EVERGREEN_HANGING_SIGN.get(), DreamBlocks.EVERGREEN_WALL_HANGING_SIGN.get(),
                 DreamBlocks.ETHEREAL_HANGING_SIGN.get(), DreamBlocks.ETHEREAL_WALL_HANGING_SIGN.get(),
                 DreamBlocks.CANDY_HANGING_SIGN.get(), DreamBlocks.CANDY_WALL_HANGING_SIGN.get(),

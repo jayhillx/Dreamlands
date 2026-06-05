@@ -16,6 +16,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class DreamBlockTags extends BlockTagsProvider {
     public static final TagKey<Block> DREAMY_LOGS = BlockTags.create(Dreamlands.modLoc("dreamy_logs"));
+    public static final TagKey<Block> ASPEN_LOGS = BlockTags.create(Dreamlands.modLoc("aspen_logs"));
     public static final TagKey<Block> EVERGREEN_LOGS = BlockTags.create(Dreamlands.modLoc("evergreen_logs"));
     public static final TagKey<Block> ETHEREAL_LOGS = BlockTags.create(Dreamlands.modLoc("ethereal_logs"));
     public static final TagKey<Block> CANDY_LOGS = BlockTags.create(Dreamlands.modLoc("candy_logs"));
@@ -36,6 +37,12 @@ public class DreamBlockTags extends BlockTagsProvider {
                 DreamBlocks.DREAMY_WOOD.get(),
                 DreamBlocks.STRIPPED_DREAMY_LOG.get(),
                 DreamBlocks.STRIPPED_DREAMY_WOOD.get()
+        );
+        this.tag(ASPEN_LOGS).add(
+                DreamBlocks.ASPEN_LOG.get(),
+                DreamBlocks.ASPEN_WOOD.get(),
+                DreamBlocks.STRIPPED_ASPEN_LOG.get(),
+                DreamBlocks.STRIPPED_ASPEN_WOOD.get()
         );
         this.tag(EVERGREEN_LOGS).add(
                 DreamBlocks.EVERGREEN_LOG.get(),
@@ -75,6 +82,7 @@ public class DreamBlockTags extends BlockTagsProvider {
         );
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .addTag(DREAMY_LOGS)
+                .addTag(ASPEN_LOGS)
                 .addTag(EVERGREEN_LOGS)
                 .addTag(ETHEREAL_LOGS)
                 .addTag(CANDY_LOGS)
@@ -124,14 +132,13 @@ public class DreamBlockTags extends BlockTagsProvider {
                 DreamBlocks.GROUND_IVY.get(),
                 DreamBlocks.CLOVERS.get(),
                 DreamBlocks.WHITE_CLOVERS.get(),
-                DreamBlocks.PINK_CLOVERS.get(),
-                DreamBlocks.PERIWINKLE.get()
+                DreamBlocks.PINK_CLOVERS.get()
         ).replace(false);
         this.tag(BlockTags.ANIMALS_SPAWNABLE_ON).add(
                 DreamBlocks.DREAMY_GRASS_BLOCK.get()
         ).replace(false);
     }
-    
+
     private void generateFor(DreamBlockFamily family) {
         family.getVariants().forEach((variant, block) -> {
             boolean flag = family.isFlammable();

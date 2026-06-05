@@ -68,6 +68,7 @@ public interface BiomeTemplate {
 
         return MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(List.of(
                 Pair.of(new Climate.ParameterPoint(temp0, full, full, full, full, weird0, 0), biomes.getOrThrow(DreamBiomes.WILDERNESS)),
+                Pair.of(new Climate.ParameterPoint(full, full, full, full, full, weird0, 0), biomes.getOrThrow(DreamBiomes.ASPEN_FOREST)),
                 Pair.of(new Climate.ParameterPoint(temp1, full, full, full, full, weird0, 0), biomes.getOrThrow(DreamBiomes.EVERGREEN_FOREST)),
                 Pair.of(new Climate.ParameterPoint(temp2, full, full, full, full, weird1, 0), biomes.getOrThrow(DreamBiomes.ETHEREAL_FOREST)),
                 Pair.of(new Climate.ParameterPoint(temp3, full, full, full, full, weird1, 0), biomes.getOrThrow(DreamBiomes.COTTON_CANDY_FOREST)),

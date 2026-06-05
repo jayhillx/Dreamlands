@@ -13,7 +13,7 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 public class DreamBiomes {
 
     public static final ResourceKey<Biome> WILDERNESS = createKey("wilderness");
-    ///public static final ResourceKey<Biome> ASPEN_FOREST = createKey("aspen_forest");
+    public static final ResourceKey<Biome> ASPEN_FOREST = createKey("aspen_forest");
     public static final ResourceKey<Biome> EVERGREEN_FOREST = createKey("evergreen_forest");
     public static final ResourceKey<Biome> ETHEREAL_FOREST = createKey("ethereal_forest");
     public static final ResourceKey<Biome> COTTON_CANDY_FOREST = createKey("cotton_candy_forest");
@@ -37,6 +37,7 @@ public class DreamBiomes {
         HolderGetter<ConfiguredWorldCarver<?>> carver = context.lookup(Registries.CONFIGURED_CARVER);
 
         context.register(WILDERNESS, DreamlandBiomes.wilderness(feature, carver));
+        context.register(ASPEN_FOREST, DreamlandBiomes.aspenForest(feature, carver));
         context.register(EVERGREEN_FOREST, DreamlandBiomes.evergreenForest(feature, carver));
         context.register(ETHEREAL_FOREST, DreamlandBiomes.etherealForest(feature, carver));
         context.register(COTTON_CANDY_FOREST, DreamlandBiomes.cottonCandyForest(feature, carver));

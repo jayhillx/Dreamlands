@@ -54,6 +54,7 @@ public class DreamRecipes extends RecipeProvider {
         stonecutterResultFromBase(output, RecipeCategory.DECORATIONS, DreamBlocks.MOSSY_DREAMSTONE_BRICK_WALL.get(), DreamBlocks.MOSSY_DREAMSTONE_BRICKS.get());
 
         planksFromLogs(output, DreamBlocks.DREAMY_PLANKS.get(), DreamItemTags.DREAMY_LOGS);
+        planksFromLogs(output, DreamBlocks.ASPEN_PLANKS.get(), DreamItemTags.ASPEN_LOGS);
         planksFromLogs(output, DreamBlocks.EVERGREEN_PLANKS.get(), DreamItemTags.EVERGREEN_LOGS);
         planksFromLogs(output, DreamBlocks.ETHEREAL_PLANKS.get(), DreamItemTags.ETHEREAL_LOGS);
         planksFromLogs(output, DreamBlocks.CANDY_PLANKS.get(), DreamItemTags.CANDY_LOGS);
@@ -62,6 +63,7 @@ public class DreamRecipes extends RecipeProvider {
         planksFromLogs(output, DreamBlocks.MUSHROOM_PLANKS.get(), DreamItemTags.MUSHROOM_STEMS);
 
         woodenBoat(output, DreamItems.DREAMY_BOAT.get(), DreamBlocks.DREAMY_PLANKS.get());
+        woodenBoat(output, DreamItems.ASPEN_BOAT.get(), DreamBlocks.ASPEN_PLANKS.get());
         woodenBoat(output, DreamItems.EVERGREEN_BOAT.get(), DreamBlocks.EVERGREEN_PLANKS.get());
         woodenBoat(output, DreamItems.ETHEREAL_BOAT.get(), DreamBlocks.ETHEREAL_PLANKS.get());
         woodenBoat(output, DreamItems.CANDY_BOAT.get(), DreamBlocks.CANDY_PLANKS.get());
@@ -70,6 +72,7 @@ public class DreamRecipes extends RecipeProvider {
         woodenBoat(output, DreamItems.MUSHROOM_BOAT.get(), DreamBlocks.MUSHROOM_PLANKS.get());
 
         chestBoat(output, DreamItems.DREAMY_CHEST_BOAT.get(), DreamItems.DREAMY_BOAT.get());
+        chestBoat(output, DreamItems.ASPEN_CHEST_BOAT.get(), DreamItems.ASPEN_BOAT.get());
         chestBoat(output, DreamItems.EVERGREEN_CHEST_BOAT.get(), DreamItems.EVERGREEN_BOAT.get());
         chestBoat(output, DreamItems.ETHEREAL_CHEST_BOAT.get(), DreamItems.ETHEREAL_BOAT.get());
         chestBoat(output, DreamItems.CANDY_CHEST_BOAT.get(), DreamItems.CANDY_BOAT.get());
@@ -83,22 +86,31 @@ public class DreamRecipes extends RecipeProvider {
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(DreamBlocks.DREAMY_MUSHROOM.get()), has(DreamBlocks.DREAMY_MUSHROOM.get()))
                 .save(output, Dreamlands.modLoc("dreamy_mushroom_soup"));
-
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, DreamItems.MARSHMALLOW.get(), 1)
                 .define('#', Items.SUGAR)
                 .pattern("##")
                 .pattern("##")
                 .unlockedBy(getHasName(Items.SUGAR), has(Items.SUGAR))
                 .save(output, Dreamlands.modLoc("marshmallow"));
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DreamItems.SMORE.get())
                 .requires(Items.BREAD)
                 .requires(DreamItems.MARSHMALLOW.get())
                 .requires(Items.COCOA_BEANS)
                 .unlockedBy(getHasName(DreamItems.MARSHMALLOW.get()), has(DreamItems.MARSHMALLOW.get()))
                 .save(output, Dreamlands.modLoc("smore"));
+
+        dyeFromFlowers(output, Items.LIGHT_BLUE_DYE, DreamBlocks.PERIWINKLE.get());
+        dyeFromFlowers(output, Items.MAGENTA_DYE, DreamBlocks.PETUNIA.get());
+        dyeFromFlowers(output, Items.PINK_DYE, DreamBlocks.PINK_FOXGLOVE.get(), 2);
+        ///dyeFromFlowers(output, Items.PINK_DYE, DreamBlocks.PINK_PUFFBALL.get());
+        dyeFromFlowers(output, Items.PINK_DYE, DreamBlocks.PINK_HYACINTH.get());
+        dyeFromFlowers(output, Items.MAGENTA_DYE, DreamBlocks.MAGENTA_HYACINTH.get());
+        dyeFromFlowers(output, Items.PURPLE_DYE, DreamBlocks.PURPLE_HYACINTH.get());
+        dyeFromFlowers(output, Items.PURPLE_DYE, DreamBlocks.PURPLE_LUPINE.get(), 2);
+        dyeFromFlowers(output, Items.PURPLE_DYE, DreamBlocks.VIOLETS.get());
+        dyeFromFlowers(output, Items.PURPLE_DYE, DreamBlocks.WISTERIA.get());
     }
-    
+
     private static void generateFor(Consumer<FinishedRecipe> output, DreamBlockFamily family) {
         family.getVariants().forEach((variant, block) -> {
             ItemLike baseBlock = getBaseBlock(family, variant);
@@ -156,6 +168,18 @@ public class DreamRecipes extends RecipeProvider {
                 .group(getItemName(baseBlock))
                 .unlockedBy("has_" + getItemName(mossBlock), has(mossBlock))
                 .save(output, Dreamlands.modLoc(getConversionRecipeName(resultBlock, mossBlock)));
+    }
+
+    protected static void dyeFromFlowers(Consumer<FinishedRecipe> output, ItemLike resultItem, ItemLike inputItem) {
+        dyeFromFlowers(output, resultItem, inputItem, 1);
+    }
+
+    protected static void dyeFromFlowers(Consumer<FinishedRecipe> output, ItemLike resultItem, ItemLike inputItem, int amount) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, resultItem, amount)
+                .requires(inputItem)
+                .group(getItemName(resultItem))
+                .unlockedBy(getHasName(inputItem), has(inputItem))
+                .save(output, Dreamlands.modLoc(getConversionRecipeName(resultItem, inputItem)));
     }
 
 }

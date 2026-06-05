@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_lupine_variant_3",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flower": "dreamlands:block/purple_lupine_flower"
+  }
+}

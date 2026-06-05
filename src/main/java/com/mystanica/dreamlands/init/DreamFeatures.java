@@ -33,7 +33,6 @@ public class DreamFeatures {
     public static final RegistryObject<MushroomFeature> MUSHROOM = FEATURES.register("mushroom", () -> new MushroomFeature(MushroomConfiguration.CODEC));
 
     public static final RegistryObject<Feature<MossPatchConfiguration>> MOSS_PATCH = FEATURES.register("moss_patch", () -> new MossPatchFeature(MossPatchConfiguration.CODEC));
-    public static final RegistryObject<Feature<PatchConfiguration>> CLOVER_PATCH = FEATURES.register("clover_patch", () -> new CloverPatchFeature(PatchConfiguration.CODEC));
 
     /// tree decorators
     public static final RegistryObject<TreeDecoratorType<HangingWisteriaDecorator>> HANGING_WISTERIA = TREE_DECORATORS.register("hanging_wisteria", () -> new TreeDecoratorType<>(HangingWisteriaDecorator.CODEC));

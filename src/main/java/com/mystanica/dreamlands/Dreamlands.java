@@ -1,7 +1,6 @@
 package com.mystanica.dreamlands;
 
 import com.google.common.collect.Sets;
-import com.mojang.logging.LogUtils;
 import com.mystanica.dreamlands.common.block.state.DreamWoodTypes;
 import com.mystanica.dreamlands.datagen.provider.*;
 import com.mystanica.dreamlands.datagen.provider.tag.DreamBlockTags;
@@ -9,7 +8,6 @@ import com.mystanica.dreamlands.datagen.provider.tag.DreamItemTags;
 import com.mystanica.dreamlands.handler.DreamingPlayerEvents;
 import com.mystanica.dreamlands.handler.SleepingPlayerEntityEvents;
 import com.mystanica.dreamlands.init.*;
-import com.mystanica.dreamlands.network.DreamNetworking;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -28,7 +26,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
 import java.util.Collections;
 import java.util.List;
@@ -38,7 +35,6 @@ import java.util.concurrent.CompletableFuture;
 @Mod(Dreamlands.modId)
 public class Dreamlands {
     public static final String modId = "dreamlands";
-    public static final Logger LOGGER = LogUtils.getLogger();
 
     public static ResourceLocation modLoc(String path) {
         return ResourceLocation.fromNamespaceAndPath(modId, path);
@@ -77,6 +73,7 @@ public class Dreamlands {
         DreamEntitySerializers.ENTITY_SERIALIZERS.register(bus);
         DreamEffects.EFFECTS.register(bus);
         DreamItems.ITEMS.register(bus);
+        DreamParticles.PARTICLES.register(bus);
         DreamFeatures.FEATURES.register(bus);
         DreamFeatures.TREE_DECORATORS.register(bus);
         DreamTabs.CREATIVE_TABS.register(bus);
@@ -110,8 +107,6 @@ public class Dreamlands {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        DreamNetworking.register();
-
         event.enqueueWork(() -> {
             DreamCompat.registerFlammables();
             DreamCompat.registerCompostables();

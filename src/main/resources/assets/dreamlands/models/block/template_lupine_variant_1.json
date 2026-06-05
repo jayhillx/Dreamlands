@@ -1,0 +1,198 @@
+{
+	"parent": "minecraft:block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"stem": "dreamlands:block/lupine_stem",
+		"leaf2_layer1": "dreamlands:block/lupine_leaf_layer1_variant",
+		"leaf2_layer2": "dreamlands:block/lupine_leaf_layer2_variant",
+		"particle": "#flower"
+	},
+	"elements": [
+		{
+			"from": [-1, 0, 8],
+			"to": [17, 16, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [-1, 0, 8],
+			"to": [17, 16, 8],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#stem"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#stem"}
+			}
+		},
+		{
+			"from": [6, 6, 6],
+			"to": [10, 11, 10],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"north": {"uv": [12, 8, 16, 13], "texture": "#flower"},
+				"east": {"uv": [12, 8, 16, 13], "texture": "#flower"},
+				"south": {"uv": [12, 8, 16, 13], "texture": "#flower"},
+				"west": {"uv": [12, 8, 16, 13], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [7, 11, 7],
+			"to": [9, 15, 9],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 5, 2, 9], "texture": "#flower"},
+				"east": {"uv": [2, 5, 4, 9], "texture": "#flower"},
+				"south": {"uv": [0, 5, 2, 9], "texture": "#flower"},
+				"west": {"uv": [2, 5, 4, 9], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [5.58579, 6, 8],
+			"to": [6.58579, 12, 8],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 2, 15], "texture": "#flower"},
+				"south": {"uv": [0, 9, 1, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [7, 5, 8],
+			"to": [9, 12, 9],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"east": {"uv": [3, 9, 4, 16], "texture": "#flower"},
+				"south": {"uv": [1, 9, 3, 16], "texture": "#flower"},
+				"west": {"uv": [0, 9, 1, 16], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [9.41421, 6, 8],
+			"to": [10.41421, 12, 8],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"north": {"uv": [3, 9, 2, 15], "texture": "#flower"},
+				"south": {"uv": [3, 9, 4, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [8, 6, 5.58579],
+			"to": [8, 12, 6.58579],
+			"shade": false,
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"east": {"uv": [1, 9, 2, 15], "texture": "#flower"},
+				"west": {"uv": [0, 9, 1, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [7, 5, 7],
+			"to": [9, 12, 8],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 3, 16], "texture": "#flower"},
+				"east": {"uv": [0, 9, 1, 16], "texture": "#flower"},
+				"west": {"uv": [3, 9, 4, 16], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [8, 6, 5.58579],
+			"to": [8, 12, 6.58579],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 15.5, 8]},
+			"faces": {
+				"east": {"uv": [3, 9, 4, 15], "texture": "#flower"},
+				"west": {"uv": [2, 9, 3, 15], "texture": "#flower"}
+			}
+		},
+		{
+			"from": [-3, 1, 2.5],
+			"to": [8, 1, 13.5],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"up": {"uv": [14, 2, 3, 13], "rotation": 90, "texture": "#leaf2_layer1"},
+				"down": {"uv": [14, 13, 3, 2], "rotation": 270, "texture": "#leaf2_layer1"}
+			}
+		},
+		{
+			"from": [-3, 0.8, 2.5],
+			"to": [8, 0.8, 13.5],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0.8, 8]},
+			"faces": {
+				"up": {"uv": [14, 2, 3, 13], "rotation": 90, "texture": "#leaf2_layer2"},
+				"down": {"uv": [14, 13, 3, 2], "rotation": 270, "texture": "#leaf2_layer2"}
+			}
+		},
+		{
+			"from": [8, 1, 2.5],
+			"to": [19, 1, 13.5],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"up": {"uv": [3, 13, 14, 2], "rotation": 90, "texture": "#leaf2_layer1"},
+				"down": {"uv": [3, 2, 14, 13], "rotation": 270, "texture": "#leaf2_layer1"}
+			}
+		},
+		{
+			"from": [8, 0.8, 2.5],
+			"to": [19, 0.8, 13.5],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0.8, 8]},
+			"faces": {
+				"up": {"uv": [3, 13, 14, 2], "rotation": 90, "texture": "#leaf2_layer2"},
+				"down": {"uv": [3, 2, 14, 13], "rotation": 270, "texture": "#leaf2_layer2"}
+			}
+		},
+		{
+			"from": [-3, 6, 0.5],
+			"to": [8, 6, 11.5],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 6, 6]},
+			"faces": {
+				"up": {"uv": [14, 2, 3, 13], "rotation": 90, "texture": "#leaf2_layer1"},
+				"down": {"uv": [14, 13, 3, 2], "rotation": 270, "texture": "#leaf2_layer1"}
+			}
+		},
+		{
+			"from": [-3, 5.8, 0.5],
+			"to": [8, 5.8, 11.5],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 6, 6]},
+			"faces": {
+				"up": {"uv": [14, 2, 3, 13], "rotation": 90, "texture": "#leaf2_layer2"},
+				"down": {"uv": [14, 13, 3, 2], "rotation": 270, "texture": "#leaf2_layer2"}
+			}
+		},
+		{
+			"from": [4.5, 6, 8],
+			"to": [15.5, 6, 19],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [10, 6, 8]},
+			"faces": {
+				"up": {"uv": [3, 13, 14, 2], "rotation": 180, "texture": "#leaf2_layer1"},
+				"down": {"uv": [3, 2, 14, 13], "rotation": 180, "texture": "#leaf2_layer1"}
+			}
+		},
+		{
+			"from": [4.5, 5.8, 8],
+			"to": [15.5, 5.8, 19],
+			"shade": false,
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [10, 5.8, 8]},
+			"faces": {
+				"up": {"uv": [3, 13, 14, 2], "rotation": 180, "texture": "#leaf2_layer2"},
+				"down": {"uv": [3, 2, 14, 13], "rotation": 180, "texture": "#leaf2_layer2"}
+			}
+		}
+	]
+}

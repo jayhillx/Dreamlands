@@ -3,15 +3,15 @@
     "": [
       {
         "model": "dreamlands:block/dreamy_leaves",
-        "weight": 2
+        "weight": 1
       },
       {
         "model": "dreamlands:block/dreamy_leaves_variant",
-        "weight": 1
+        "weight": 2
       },
       {
         "model": "dreamlands:block/dreamy_leaves_variant2",
-        "weight": 1
+        "weight": 2
       }
     ]
   }

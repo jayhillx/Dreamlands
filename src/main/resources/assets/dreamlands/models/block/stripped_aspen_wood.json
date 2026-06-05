@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "dreamlands:block/stripped_aspen_log",
+    "side": "dreamlands:block/stripped_aspen_log"
+  }
+}

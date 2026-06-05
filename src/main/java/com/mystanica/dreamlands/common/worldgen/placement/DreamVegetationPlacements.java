@@ -32,10 +32,6 @@ public class DreamVegetationPlacements {
     public static final ResourceKey<PlacedFeature> PATCH_DREAMY_MUSHROOM = createKey("patch_dreamy_mushroom");
 
     /// dreamland
-    public static final ResourceKey<PlacedFeature> TREES_WILDERNESS = createKey("trees_wilderness");
-    public static final ResourceKey<PlacedFeature> SHRUBS_WILDERNESS = createKey("shrubs_wilderness");
-    ///public static final ResourceKey<PlacedFeature> FLOWERS_WILDERNESS = createKey("flowers_wilderness");
-
     public static final ResourceKey<PlacedFeature> PATCH_GROUND_IVY = createKey("patch_ground_ivy");
     public static final ResourceKey<PlacedFeature> PATCH_CLOVERS = createKey("patch_clovers");
     public static final ResourceKey<PlacedFeature> PATCH_WHITE_CLOVERS = createKey("patch_white_clovers");
@@ -46,20 +42,21 @@ public class DreamVegetationPlacements {
     public static final ResourceKey<PlacedFeature> FLOWER_PINK_HYACINTH = createKey("flower_pink_hyacinth");
     public static final ResourceKey<PlacedFeature> FLOWER_MAGENTA_HYACINTH = createKey("flower_magenta_hyacinth");
     public static final ResourceKey<PlacedFeature> FLOWER_PURPLE_HYACINTH = createKey("flower_purple_hyacinth");
+    public static final ResourceKey<PlacedFeature> FLOWER_PURPLE_LUPINE = createKey("flower_purple_lupine");
     public static final ResourceKey<PlacedFeature> FLOWER_VIOLETS = createKey("flower_violets");
 
+    public static final ResourceKey<PlacedFeature> TREES_WILDERNESS = createKey("trees_wilderness");
+    public static final ResourceKey<PlacedFeature> SHRUBS_WILDERNESS = createKey("shrubs_wilderness");
+    public static final ResourceKey<PlacedFeature> TREES_ASPEN_FOREST = createKey("trees_aspen_forest");
+    public static final ResourceKey<PlacedFeature> SHRUBS_ASPEN_FOREST = createKey("shrubs_aspen_forest");
     public static final ResourceKey<PlacedFeature> TREES_EVERGREEN_FOREST = createKey("trees_evergreen_forest");
     public static final ResourceKey<PlacedFeature> SHRUBS_EVERGREEN_FOREST = createKey("shrubs_evergreen_forest");
     public static final ResourceKey<PlacedFeature> MUSHROOMS_TOADSTOOL = createKey("mushrooms_toadstool");
     public static final ResourceKey<PlacedFeature> PATCH_TOADSTOOL = createKey("patch_toadstool");
-
     public static final ResourceKey<PlacedFeature> TREES_ETHEREAL_FOREST = createKey("trees_ethereal_forest");
     public static final ResourceKey<PlacedFeature> SHRUBS_ETHEREAL_FOREST = createKey("shrubs_ethereal_forest");
-
     public static final ResourceKey<PlacedFeature> TREES_COTTON_CANDY_FOREST = createKey("trees_cotton_candy_forest");
-
     public static final ResourceKey<PlacedFeature> TREES_WISTERIA_GROVE = createKey("trees_wisteria_grove");
-
     public static final ResourceKey<PlacedFeature> TREES_FAERIE_FOREST = createKey("trees_faerie_forest");
     public static final ResourceKey<PlacedFeature> SHRUBS_FAERIE_FOREST = createKey("shrubs_faerie_forest");
     public static final ResourceKey<PlacedFeature> MUSHROOMS_PINK = createKey("mushrooms_pink");
@@ -82,13 +79,17 @@ public class DreamVegetationPlacements {
         Holder<ConfiguredFeature<?, ?>> PATCH_PINK_CLOVERS = getter.getOrThrow(DreamVegetationFeatures.PATCH_PINK_CLOVERS);
         Holder<ConfiguredFeature<?, ?>> FLOWER_PETUNIA = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PETUNIA);
         Holder<ConfiguredFeature<?, ?>> FLOWER_PERIWINKLE = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PERIWINKLE);
+        ///Holder<ConfiguredFeature<?, ?>> FLOWER_PINK_PUFFBALL = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PINK_PUFFBALL);
         Holder<ConfiguredFeature<?, ?>> FLOWER_PINK_FOXGLOVE = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PINK_FOXGLOVE);
         Holder<ConfiguredFeature<?, ?>> FLOWER_PINK_HYACINTH = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PINK_HYACINTH);
         Holder<ConfiguredFeature<?, ?>> FLOWER_MAGENTA_HYACINTH = getter.getOrThrow(DreamVegetationFeatures.FLOWER_MAGENTA_HYACINTH);
         Holder<ConfiguredFeature<?, ?>> FLOWER_PURPLE_HYACINTH = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PURPLE_HYACINTH);
+        Holder<ConfiguredFeature<?, ?>> FLOWER_PURPLE_LUPINE = getter.getOrThrow(DreamVegetationFeatures.FLOWER_PURPLE_LUPINE);
         Holder<ConfiguredFeature<?, ?>> FLOWER_VIOLETS = getter.getOrThrow(DreamVegetationFeatures.FLOWER_VIOLETS);
         Holder<ConfiguredFeature<?, ?>> TREES_WILDERNESS = getter.getOrThrow(DreamVegetationFeatures.TREES_WILDERNESS);
         Holder<ConfiguredFeature<?, ?>> SHRUBS_WILDERNESS = getter.getOrThrow(DreamVegetationFeatures.SHRUBS_WILDERNESS);
+        Holder<ConfiguredFeature<?, ?>> TREES_ASPEN_FOREST = getter.getOrThrow(DreamVegetationFeatures.TREES_ASPEN_FOREST);
+        Holder<ConfiguredFeature<?, ?>> SHRUBS_ASPEN_FOREST = getter.getOrThrow(DreamVegetationFeatures.SHRUBS_ASPEN_FOREST);
         Holder<ConfiguredFeature<?, ?>> TREES_EVERGREEN_FOREST = getter.getOrThrow(DreamVegetationFeatures.TREES_EVERGREEN_FOREST);
         Holder<ConfiguredFeature<?, ?>> SHRUBS_EVERGREEN_FOREST = getter.getOrThrow(DreamVegetationFeatures.SHRUBS_EVERGREEN_FOREST);
         Holder<ConfiguredFeature<?, ?>> MUSHROOMS_TOADSTOOL = getter.getOrThrow(DreamVegetationFeatures.MUSHROOMS_TOADSTOOL);
@@ -121,10 +122,14 @@ public class DreamVegetationPlacements {
         PlacementUtils.register(context, DreamVegetationPlacements.FLOWER_PINK_HYACINTH, FLOWER_PINK_HYACINTH, basicPlacement(RarityFilter.onAverageOnceEvery(1)));
         PlacementUtils.register(context, DreamVegetationPlacements.FLOWER_MAGENTA_HYACINTH, FLOWER_MAGENTA_HYACINTH, basicPlacement(RarityFilter.onAverageOnceEvery(1)));
         PlacementUtils.register(context, DreamVegetationPlacements.FLOWER_PURPLE_HYACINTH, FLOWER_PURPLE_HYACINTH, basicPlacement(RarityFilter.onAverageOnceEvery(1)));
+        PlacementUtils.register(context, DreamVegetationPlacements.FLOWER_PURPLE_LUPINE, FLOWER_PURPLE_LUPINE, basicPlacement(RarityFilter.onAverageOnceEvery(1)));
         PlacementUtils.register(context, DreamVegetationPlacements.FLOWER_VIOLETS, FLOWER_VIOLETS, basicPlacement(RarityFilter.onAverageOnceEvery(1)));
 
         PlacementUtils.register(context, DreamVegetationPlacements.TREES_WILDERNESS, TREES_WILDERNESS, treePlacement(RarityFilter.onAverageOnceEvery(2)));
         PlacementUtils.register(context, DreamVegetationPlacements.SHRUBS_WILDERNESS, SHRUBS_WILDERNESS, treePlacement(PlacementUtils.countExtra(32, 0.2F, 1)));
+
+        PlacementUtils.register(context, DreamVegetationPlacements.TREES_ASPEN_FOREST, TREES_ASPEN_FOREST, treePlacement(PlacementUtils.countExtra(6, 0.2F, 1)));
+        PlacementUtils.register(context, DreamVegetationPlacements.SHRUBS_ASPEN_FOREST, SHRUBS_ASPEN_FOREST, treePlacement(PlacementUtils.countExtra(6, 0.2F, 1)));
 
         PlacementUtils.register(context, DreamVegetationPlacements.TREES_EVERGREEN_FOREST, TREES_EVERGREEN_FOREST, treePlacement(PlacementUtils.countExtra(3, 0.2F, 1)));
         PlacementUtils.register(context, DreamVegetationPlacements.SHRUBS_EVERGREEN_FOREST, SHRUBS_EVERGREEN_FOREST, treePlacement(PlacementUtils.countExtra(64, 0.2F, 1)));

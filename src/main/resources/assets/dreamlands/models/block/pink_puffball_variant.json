@@ -1,0 +1,7 @@
+{
+  "parent": "dreamlands:block/template_puffball_variant",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "flower": "dreamlands:block/pink_puffball_flower"
+  }
+}

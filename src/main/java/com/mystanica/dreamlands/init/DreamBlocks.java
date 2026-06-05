@@ -230,12 +230,14 @@ public class DreamBlocks {
     public static final RegistryObject<Block> CLOVERS = BLOCKS.register("clovers", () -> new CloverBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().sound(SoundType.PINK_PETALS).replaceable().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_CLOVERS = BLOCKS.register("white_clovers", () -> new CloverBlock(copy(CLOVERS.get())));
     public static final RegistryObject<Block> PINK_CLOVERS = BLOCKS.register("pink_clovers", () -> new CloverBlock(copy(CLOVERS.get())));
-    public static final RegistryObject<Block> PERIWINKLE = BLOCKS.register("periwinkle", () -> new CloverBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().sound(SoundType.PINK_PETALS).replaceable().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PETUNIA = BLOCKS.register("petunia", DreamBlocks::flower);
+    public static final RegistryObject<Block> PERIWINKLE = BLOCKS.register("periwinkle", () -> new PeriwinkleFlowerBlock(flowerProperties(false)));
+    ///public static final RegistryObject<Block> PINK_PUFFBALL = BLOCKS.register("pink_puffball", DreamBlocks::flower);
     public static final RegistryObject<Block> PINK_FOXGLOVE = BLOCKS.register("pink_foxglove", () -> new FoxgloveFlowerBlock(flowerProperties()));
     public static final RegistryObject<Block> PINK_HYACINTH = BLOCKS.register("pink_hyacinth", () -> new HyacinthFlowerBlock(flowerProperties()));
     public static final RegistryObject<Block> MAGENTA_HYACINTH = BLOCKS.register("magenta_hyacinth", () -> new HyacinthFlowerBlock(flowerProperties()));
     public static final RegistryObject<Block> PURPLE_HYACINTH = BLOCKS.register("purple_hyacinth", () -> new HyacinthFlowerBlock(flowerProperties()));
+    public static final RegistryObject<Block> PURPLE_LUPINE = BLOCKS.register("purple_lupine", () -> new StackableFlowerBlock(flowerProperties()));
     public static final RegistryObject<Block> VIOLETS = BLOCKS.register("violets", DreamBlocks::flower);
     public static final RegistryObject<Block> WISTERIA = BLOCKS.register("wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().sound(SoundType.FLOWERING_AZALEA).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WISTERIA_PLANT = BLOCKS.register("wisteria_plant", () -> new WisteriaPlantBlock(copy(WISTERIA.get())));
@@ -301,25 +303,25 @@ public class DreamBlocks {
     public static final RegistryObject<Block> DREAMY_WALL_HANGING_SIGN = BLOCKS.register("dreamy_wall_hanging_sign", () -> wallHangingSign(DREAMY_HANGING_SIGN.get(), DreamWoodTypes.DREAMY));
 
     /// aspen forest
-    ///public static final RegistryObject<Block> ASPEN_LEAVES = BLOCKS.register("aspen_leaves", DreamBlocks::leaves);
-    ///public static final RegistryObject<Block> ASPEN_SAPLING = BLOCKS.register("aspen_sapling", () -> sapling(new DreamMegaTreeGrowers(DreamTreeFeatures.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_LOG = BLOCKS.register("aspen_log", () -> log(MapColor.SAND, MapColor.QUARTZ));
-    ///public static final RegistryObject<Block> STRIPPED_ASPEN_LOG = BLOCKS.register("stripped_aspen_log", () -> log(MapColor.SAND));
-    ///public static final RegistryObject<Block> ASPEN_WOOD = BLOCKS.register("aspen_wood", () -> log(MapColor.SAND));
-    ///public static final RegistryObject<Block> STRIPPED_ASPEN_WOOD = BLOCKS.register("stripped_aspen_wood", () -> log(MapColor.SAND));
-    ///public static final RegistryObject<Block> ASPEN_PLANKS = BLOCKS.register("aspen_planks", () -> planks(MapColor.SAND));
-    ///public static final RegistryObject<Block> ASPEN_STAIRS = BLOCKS.register("aspen_stairs", () -> stairs(ASPEN_PLANKS.get()));
-    ///public static final RegistryObject<Block> ASPEN_SLAB = BLOCKS.register("aspen_slab", () -> slab(ASPEN_PLANKS.get()));
-    ///public static final RegistryObject<Block> ASPEN_FENCE = BLOCKS.register("aspen_fence", () -> fence(ASPEN_PLANKS.get()));
-    ///public static final RegistryObject<Block> ASPEN_FENCE_GATE = BLOCKS.register("aspen_fence_gate", () -> fenceGate(ASPEN_PLANKS.get(), DreamWoodTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_BUTTON = BLOCKS.register("aspen_button", () -> button(DreamBlockSetTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_PRESSURE_PLATE = BLOCKS.register("aspen_pressure_plate", () -> pressurePlate(ASPEN_PLANKS.get(), DreamBlockSetTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_TRAPDOOR = BLOCKS.register("aspen_trapdoor", () -> trapdoor(ASPEN_PLANKS.get(), DreamBlockSetTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_DOOR = BLOCKS.register("aspen_door", () -> door(ASPEN_PLANKS.get(), DreamBlockSetTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_SIGN = BLOCKS.register("aspen_sign", () -> sign(ASPEN_PLANKS.get(), DreamWoodTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_WALL_SIGN = BLOCKS.register("aspen_wall_sign", () -> wallSign(ASPEN_SIGN.get(), DreamWoodTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_HANGING_SIGN = BLOCKS.register("aspen_hanging_sign", () -> hangingSign(ASPEN_PLANKS.get(), DreamWoodTypes.ASPEN));
-    ///public static final RegistryObject<Block> ASPEN_WALL_HANGING_SIGN = BLOCKS.register("aspen_wall_hanging_sign", () -> wallHangingSign(ASPEN_HANGING_SIGN.get(), DreamWoodTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_LEAVES = BLOCKS.register("aspen_leaves", DreamBlocks::leaves);
+    public static final RegistryObject<Block> ASPEN_SAPLING = BLOCKS.register("aspen_sapling", () -> sapling(new DreamTreeGrowers(DreamTreeFeatures.ASPEN_TREE)));
+    public static final RegistryObject<Block> ASPEN_LOG = BLOCKS.register("aspen_log", () -> log(MapColor.SAND, MapColor.QUARTZ));
+    public static final RegistryObject<Block> STRIPPED_ASPEN_LOG = BLOCKS.register("stripped_aspen_log", () -> log(MapColor.SAND));
+    public static final RegistryObject<Block> ASPEN_WOOD = BLOCKS.register("aspen_wood", () -> log(MapColor.SAND));
+    public static final RegistryObject<Block> STRIPPED_ASPEN_WOOD = BLOCKS.register("stripped_aspen_wood", () -> log(MapColor.SAND));
+    public static final RegistryObject<Block> ASPEN_PLANKS = BLOCKS.register("aspen_planks", () -> planks(MapColor.SAND));
+    public static final RegistryObject<Block> ASPEN_STAIRS = BLOCKS.register("aspen_stairs", () -> stairs(ASPEN_PLANKS.get()));
+    public static final RegistryObject<Block> ASPEN_SLAB = BLOCKS.register("aspen_slab", () -> slab(ASPEN_PLANKS.get()));
+    public static final RegistryObject<Block> ASPEN_FENCE = BLOCKS.register("aspen_fence", () -> fence(ASPEN_PLANKS.get()));
+    public static final RegistryObject<Block> ASPEN_FENCE_GATE = BLOCKS.register("aspen_fence_gate", () -> fenceGate(ASPEN_PLANKS.get(), DreamWoodTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_BUTTON = BLOCKS.register("aspen_button", () -> button(DreamBlockSetTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_PRESSURE_PLATE = BLOCKS.register("aspen_pressure_plate", () -> pressurePlate(ASPEN_PLANKS.get(), DreamBlockSetTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_TRAPDOOR = BLOCKS.register("aspen_trapdoor", () -> trapdoor(ASPEN_PLANKS.get(), DreamBlockSetTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_DOOR = BLOCKS.register("aspen_door", () -> door(ASPEN_PLANKS.get(), DreamBlockSetTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_SIGN = BLOCKS.register("aspen_sign", () -> sign(ASPEN_PLANKS.get(), DreamWoodTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_WALL_SIGN = BLOCKS.register("aspen_wall_sign", () -> wallSign(ASPEN_SIGN.get(), DreamWoodTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_HANGING_SIGN = BLOCKS.register("aspen_hanging_sign", () -> hangingSign(ASPEN_PLANKS.get(), DreamWoodTypes.ASPEN));
+    public static final RegistryObject<Block> ASPEN_WALL_HANGING_SIGN = BLOCKS.register("aspen_wall_hanging_sign", () -> wallHangingSign(ASPEN_HANGING_SIGN.get(), DreamWoodTypes.ASPEN));
 
     /// evergreen forest
     public static final RegistryObject<Block> EVERGREEN_LEAVES = BLOCKS.register("evergreen_leaves", DreamBlocks::leaves);
@@ -647,7 +649,7 @@ public class DreamBlocks {
     public static final RegistryObject<Block> POTTED_FOREST_MUSHROOM = BLOCKS.register("potted_forest_mushroom", () -> potted(FOREST_MUSHROOM.get()));
     public static final RegistryObject<Block> POTTED_DREAMY_SAPLING = BLOCKS.register("potted_dreamy_sapling", () -> potted(DREAMY_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_DREAMY_MUSHROOM = BLOCKS.register("potted_dreamy_mushroom", () -> potted(DREAMY_MUSHROOM.get()));
-    ///public static final RegistryObject<Block> POTTED_ASPEN_SAPLING = BLOCKS.register("potted_aspen_sapling", () -> potted(ASPEN_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_ASPEN_SAPLING = BLOCKS.register("potted_aspen_sapling", () -> potted(ASPEN_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_EVERGREEN_SAPLING = BLOCKS.register("potted_evergreen_sapling", () -> potted(EVERGREEN_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_TOADSTOOL = BLOCKS.register("potted_toadstool", () -> potted(TOADSTOOL.get()));
     public static final RegistryObject<Block> POTTED_ETHEREAL_SAPLING = BLOCKS.register("potted_ethereal_sapling", () -> potted(ETHEREAL_SAPLING.get()));
@@ -776,6 +778,10 @@ public class DreamBlocks {
         return new DreamFlowerBlock(DreamEffects.DREAMING, 5, flowerProperties());
     }
 
+    private static Block tallFlower() {
+        return new DreamTallFlowerBlock(flowerProperties());
+    }
+
     private static Block mushroom(ResourceKey<ConfiguredFeature<?, ?>> feature, MapColor mapColor) {
         return new MushroomBlock(feature, BlockBehaviour.Properties.of().mapColor(mapColor).sound(SoundType.GRASS).randomTicks().instabreak().noCollission().hasPostProcess(DreamBlocks::always).pushReaction(PushReaction.DESTROY));
     }
@@ -825,7 +831,16 @@ public class DreamBlocks {
     }
 
     private static BlockBehaviour.Properties flowerProperties() {
-        return BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY);
+        return flowerProperties(true);
+    }
+
+    private static BlockBehaviour.Properties flowerProperties(boolean hasOffset) {
+        BlockBehaviour.Properties properties = BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().pushReaction(PushReaction.DESTROY);
+        if (hasOffset) {
+            properties.offsetType(BlockBehaviour.OffsetType.XZ);
+        }
+
+        return properties;
     }
 
     private static Boolean ocelotOrParrot(BlockState state, BlockGetter getter, BlockPos pos, EntityType<?> entityType) {

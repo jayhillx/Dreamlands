@@ -90,7 +90,7 @@ public class DreamChestBoat extends ChestBoat {
     public Item getDropItem() {
         return switch (DreamBoat.Type.byId(this.entityData.get(DATA_ID_TYPE))) {
             case DREAMY -> DreamItems.DREAMY_BOAT.get();
-            ///case ASPEN -> DreamItems.ASPEN_BOAT.get();
+            case ASPEN -> DreamItems.ASPEN_BOAT.get();
             case EVERGREEN -> DreamItems.EVERGREEN_BOAT.get();
             case ETHEREAL -> DreamItems.ETHEREAL_BOAT.get();
             case CANDY -> DreamItems.CANDY_BOAT.get();

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/template_single_face",
   "textures": {
-    "all": "dreamlands:block/forest_mushroom_block"
+    "texture": "dreamlands:block/forest_mushroom_block"
   }
 }

@@ -27,103 +27,104 @@ public class DreamBlockModels extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        //DreamBlockFamilies.getAllFamilies().filter(DreamBlockFamily::shouldGenerateModel).forEach(this::generateFor);
-        //this.createGrassBlock(DreamBlocks.DREAMY_GRASS_BLOCK.get(), DreamBlocks.DREAMY_DIRT.get());
-        //this.createGrassBlock(DreamBlocks.DREAMY_DIRT_PATH.get(), DreamBlocks.DREAMY_DIRT.get());
-        //this.createCubeBlock(DreamBlocks.DREAMY_DIRT.get());
-        //this.createCrossBlock(DreamBlocks.DREAMY_GRASS.get(), 3);
-        //this.createTallPlantBlock(DreamBlocks.TALL_DREAMY_GRASS.get(), 2);
-        //this.createCrossBlock(DreamBlocks.DREAMY_FERN.get());
-        //this.createTallPlantBlock(DreamBlocks.TALL_DREAMY_FERN.get());
-        //this.createLeavesBlock(DreamBlocks.FOREST_SHRUB_LEAVES.get());
-        //this.createShrubBlock(DreamBlocks.FOREST_SHRUB.get());
-        //this.createFullAndCarpetBlocks(DreamBlocks.FOREST_MOSS_BLOCK.get(), DreamBlocks.FOREST_MOSS_CARPET.get());
-        //this.createCrossBlock(DreamBlocks.FOREST_GRASS.get());
-        //this.createTallPlantBlock(DreamBlocks.TALL_FOREST_GRASS.get());
-        //this.createCubeBlock(DreamBlocks.FOREST_MUSHROOM_BLOCK.get());
-        //this.createMushroomBlock(DreamBlocks.FOREST_MUSHROOM.get());
-        //this.createFlowerBedBlock(DreamBlocks.GROUND_IVY.get());
-        //this.createFlowerBedBlock(DreamBlocks.CLOVERS.get());
-        //this.createFlowerBedBlock(DreamBlocks.WHITE_CLOVERS.get(), DreamBlocks.CLOVERS.get());
-        //this.createFlowerBedBlock(DreamBlocks.PINK_CLOVERS.get(), DreamBlocks.CLOVERS.get());
-        //this.createCrossBlock(DreamBlocks.PETUNIA.get(), 2);
-        //this.createFlowerBedBlock(DreamBlocks.PERIWINKLE.get());
-        //this.createCrossBlock(DreamBlocks.PINK_FOXGLOVE.get());
-        //this.createHyacinthBlock(DreamBlocks.PINK_HYACINTH.get());
-        //this.createHyacinthBlock(DreamBlocks.MAGENTA_HYACINTH.get());
-        //this.createHyacinthBlock(DreamBlocks.PURPLE_HYACINTH.get());
-        //this.createCrossBlock(DreamBlocks.VIOLETS.get());
+        ///DreamBlockFamilies.getAllFamilies().filter(DreamBlockFamily::shouldGenerateModel).forEach(this::generateFor);
+        ///this.createGrassBlock(DreamBlocks.DREAMY_GRASS_BLOCK.get(), DreamBlocks.DREAMY_DIRT.get());
+        ///this.createGrassBlock(DreamBlocks.DREAMY_DIRT_PATH.get(), DreamBlocks.DREAMY_DIRT.get());
+        ///this.createCubeBlock(DreamBlocks.DREAMY_DIRT.get());
+        ///this.createCrossBlock(DreamBlocks.DREAMY_GRASS.get(), 3);
+        ///this.createTallPlantBlock(DreamBlocks.TALL_DREAMY_GRASS.get(), 2);
+        ///this.createCrossBlock(DreamBlocks.DREAMY_FERN.get());
+        ///this.createTallPlantBlock(DreamBlocks.TALL_DREAMY_FERN.get());
+        ///this.createLeavesBlock(DreamBlocks.FOREST_SHRUB_LEAVES.get());
+        ///this.createShrubBlock(DreamBlocks.FOREST_SHRUB.get());
+        ///this.createFullAndCarpetBlocks(DreamBlocks.FOREST_MOSS_BLOCK.get(), DreamBlocks.FOREST_MOSS_CARPET.get());
+        ///this.createCrossBlock(DreamBlocks.FOREST_GRASS.get());
+        ///this.createTallPlantBlock(DreamBlocks.TALL_FOREST_GRASS.get());
+        ///this.createCubeBlock(DreamBlocks.FOREST_MUSHROOM_BLOCK.get());
+        ///this.createMushroomBlock(DreamBlocks.FOREST_MUSHROOM.get());
+        ///this.createFlowerBedBlock(DreamBlocks.GROUND_IVY.get());
+        ///this.createFlowerBedBlock(DreamBlocks.CLOVERS.get());
+        ///this.createFlowerBedBlock(DreamBlocks.WHITE_CLOVERS.get(), DreamBlocks.CLOVERS.get());
+        ///this.createFlowerBedBlock(DreamBlocks.PINK_CLOVERS.get(), DreamBlocks.CLOVERS.get());
+        ///this.createCrossBlock(DreamBlocks.PETUNIA.get(), 2);
+        ///this.createFlowerBedBlock(DreamBlocks.PERIWINKLE.get());
+        ///this.createPuffballBlock(DreamBlocks.PINK_PUFFBALL.get(), 3);
+        ///this.createCrossBlock(DreamBlocks.PINK_FOXGLOVE.get());
+        ///this.createHyacinthBlock(DreamBlocks.PINK_HYACINTH.get());
+        ///this.createHyacinthBlock(DreamBlocks.MAGENTA_HYACINTH.get());
+        ///this.createHyacinthBlock(DreamBlocks.PURPLE_HYACINTH.get());
+        ///this.createStackableFlowerBlock(DreamBlocks.PURPLE_LUPINE.get());
+        ///this.createCrossBlock(DreamBlocks.VIOLETS.get());
         ///////////////////////////////////////
-        //this.createLeavesBlock(DreamBlocks.DREAMY_LEAVES.get());
-        //this.createCrossBlock(DreamBlocks.DREAMY_SAPLING.get());
-        //this.createCubeBlock(DreamBlocks.DREAMY_MUSHROOM_BLOCK.get());
-        //this.createMushroomBlock(DreamBlocks.DREAMY_MUSHROOM.get());
-        //this.createLeavesBlock(DreamBlocks.EVERGREEN_LEAVES.get());
-        //this.createCrossBlock(DreamBlocks.EVERGREEN_SAPLING.get());
-        //this.createCubeBlock(DreamBlocks.TOADSTOOL_BLOCK.get());
-        //this.createMushroomBlock(DreamBlocks.TOADSTOOL.get());
-        //this.createBushyLeavesBlock(DreamBlocks.ETHEREAL_LEAVES.get());
-        //this.createCrossBlock(DreamBlocks.ETHEREAL_SAPLING.get());
-        //this.createBushyLeavesBlock(DreamBlocks.LILAC_BUSH_FLOWERS.get(), 2);
-        //this.createBushyFloweringLeavesBlock(DreamBlocks.LILAC_BUSH_LEAVES.get(), DreamBlocks.LILAC_BUSH_FLOWERS.get(), 2);
-        //this.createShrubBlock(DreamBlocks.LILAC_BUSH.get());
-        //this.createCubeBlock(DreamBlocks.PINK_COTTON_CANDY_BLOCK.get());
-        //this.createCrossBlock(DreamBlocks.PINK_COTTON_CANDY_SAPLING.get());
-        //this.createCubeBlock(DreamBlocks.BLUE_COTTON_CANDY_BLOCK.get());
-        //this.createCrossBlock(DreamBlocks.BLUE_COTTON_CANDY_SAPLING.get());
-        //this.createBushyFloweringLeavesBlock(DreamBlocks.WISTERIA_LEAVES.get(), DreamBlocks.WISTERIA_BLOSSOMS.get());
-        //this.createBushyLeavesBlock(DreamBlocks.WISTERIA_BLOSSOMS.get());
-        //this.createCrossBlock(DreamBlocks.WISTERIA_SAPLING.get());
-        //this.createWisteriaBlock(DreamBlocks.WISTERIA.get());
-        //this.createWisteriaBlock(DreamBlocks.WISTERIA_PLANT.get());
-        //this.createLeavesBlock(DreamBlocks.MYSTICAL_LEAVES.get());
-        //this.createCrossBlock(DreamBlocks.MYSTICAL_SAPLING.get());
-        //this.createLeavesBlock(DreamBlocks.FAIRY_ROSE_BUSH_LEAVES.get(), 4);
-        //this.createShrubBlock(DreamBlocks.FAIRY_ROSE_BUSH.get());
-        //this.createCubeBlock(DreamBlocks.PINK_MUSHROOM_BLOCK.get());
-        //this.createMushroomBlock(DreamBlocks.PINK_MUSHROOM.get());
+        ///this.createLeavesBlock(DreamBlocks.DREAMY_LEAVES.get());
+        ///this.createCrossBlock(DreamBlocks.DREAMY_SAPLING.get());
+        ///this.createCubeBlock(DreamBlocks.DREAMY_MUSHROOM_BLOCK.get());
+        ///this.createMushroomBlock(DreamBlocks.DREAMY_MUSHROOM.get());
+        ///this.createLeavesBlock(DreamBlocks.EVERGREEN_LEAVES.get());
+        ///this.createCrossBlock(DreamBlocks.EVERGREEN_SAPLING.get());
+        ///this.createCubeBlock(DreamBlocks.TOADSTOOL_BLOCK.get());
+        ///this.createMushroomBlock(DreamBlocks.TOADSTOOL.get());
+        ///this.createBushyLeavesBlock(DreamBlocks.ETHEREAL_LEAVES.get());
+        ///this.createCrossBlock(DreamBlocks.ETHEREAL_SAPLING.get());
+        ///this.createBushyLeavesBlock(DreamBlocks.LILAC_BUSH_FLOWERS.get(), 2);
+        ///this.createBushyFloweringLeavesBlock(DreamBlocks.LILAC_BUSH_LEAVES.get(), DreamBlocks.LILAC_BUSH_FLOWERS.get(), 2);
+        ///this.createShrubBlock(DreamBlocks.LILAC_BUSH.get());
+        ///this.createCubeBlock(DreamBlocks.PINK_COTTON_CANDY_BLOCK.get());
+        ///this.createCrossBlock(DreamBlocks.PINK_COTTON_CANDY_SAPLING.get());
+        ///this.createCubeBlock(DreamBlocks.BLUE_COTTON_CANDY_BLOCK.get());
+        ///this.createCrossBlock(DreamBlocks.BLUE_COTTON_CANDY_SAPLING.get());
+        ///this.createBushyFloweringLeavesBlock(DreamBlocks.WISTERIA_LEAVES.get(), DreamBlocks.WISTERIA_BLOSSOMS.get());
+        ///this.createBushyLeavesBlock(DreamBlocks.WISTERIA_BLOSSOMS.get());
+        ///this.createCrossBlock(DreamBlocks.WISTERIA_SAPLING.get());
+        ///this.createWisteriaBlock(DreamBlocks.WISTERIA.get());
+        ///this.createWisteriaBlock(DreamBlocks.WISTERIA_PLANT.get());
+        ///this.createLeavesBlock(DreamBlocks.MYSTICAL_LEAVES.get());
+        ///this.createCrossBlock(DreamBlocks.MYSTICAL_SAPLING.get());
+        ///this.createLeavesBlock(DreamBlocks.FAIRY_ROSE_BUSH_LEAVES.get(), 4);
+        ///this.createShrubBlock(DreamBlocks.FAIRY_ROSE_BUSH.get());
+        ///this.createCubeBlock(DreamBlocks.PINK_MUSHROOM_BLOCK.get());
+        ///this.createMushroomBlock(DreamBlocks.PINK_MUSHROOM.get());
         ///////////////////////////////////////
-        //this.createPottedShrubBlock(DreamBlocks.POTTED_FOREST_SHRUB.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_FOREST_MUSHROOM.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_DREAMY_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_DREAMY_MUSHROOM.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_EVERGREEN_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_TOADSTOOL.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_ETHEREAL_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_LILAC_BUSH.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_PINK_COTTON_CANDY_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_BLUE_COTTON_CANDY_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_WISTERIA_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_MYSTICAL_SAPLING.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_FAIRY_ROSE_BUSH.get());
-        //this.createPottedPlantBlock(DreamBlocks.POTTED_PINK_MUSHROOM.get());
+        ///this.createPottedShrubBlock(DreamBlocks.POTTED_FOREST_SHRUB.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_FOREST_MUSHROOM.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_DREAMY_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_DREAMY_MUSHROOM.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_EVERGREEN_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_TOADSTOOL.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_ETHEREAL_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_LILAC_BUSH.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_PINK_COTTON_CANDY_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_BLUE_COTTON_CANDY_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_WISTERIA_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_MYSTICAL_SAPLING.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_FAIRY_ROSE_BUSH.get());
+        ///this.createPottedPlantBlock(DreamBlocks.POTTED_PINK_MUSHROOM.get());
     }
 
     private void generateFor(DreamBlockFamily family) {
-        //family.getVariants().forEach((variant, block) -> {
-        //    Block base = family.getBaseBlock();
-        //    Block source = family.get(variant.source());
-        //    switch (variant) {
-        //        case LOG, STRIPPED_LOG -> this.logBlock((RotatedPillarBlock)block);
-        //        case WOOD, STRIPPED_WOOD -> this.axisBlock((RotatedPillarBlock)block, texture(source), texture(source));
-        //        case STAIRS -> this.stairsBlock((StairBlock)block, texture(base));
-        //        case SLAB -> this.slabBlock((SlabBlock)block, texture(base), texture(base));
-        //        case FENCE -> this.fenceBlock((FenceBlock)block, texture(base));
-        //        case FENCE_GATE -> this.fenceGateBlock((FenceGateBlock)block, texture(base));
-        //        case BUTTON -> this.buttonBlock((ButtonBlock)block, texture(base));
-        //        case PRESSURE_PLATE -> this.pressurePlateBlock((PressurePlateBlock)block, texture(base));
-        //        case TRAPDOOR -> this.trapdoorBlockWithRenderType((TrapDoorBlock)block, texture(block), true, mcLoc("cutout"));
-        //        case DOOR -> this.doorBlockWithRenderType((DoorBlock)block, texture(block, "_bottom"), texture(block, "_top"), mcLoc("cutout"));
-        //        case SIGN -> this.signBlock((StandingSignBlock)block, (WallSignBlock)source, texture(base));
-        //        case HANGING_SIGN -> this.hangingSignBlock((CeilingHangingSignBlock)block, (WallHangingSignBlock)source, texture(base));
-        //        case WALL -> this.wallBlock((WallBlock)block, texture(base));
-        //        default -> {
-        //            if (variant != DreamBlockFamily.Variant.WALL_SIGN && variant != DreamBlockFamily.Variant.WALL_HANGING_SIGN) {
-        //                this.simpleBlock(block);
-        //            }
-        //        }
-        //    }
-        //});
+        family.getVariants().forEach((variant, block) -> {
+            Block base = family.getBaseBlock();
+            Block source = family.get(variant.source());
+            switch (variant) {
+                case LOG, STRIPPED_LOG -> this.logBlock((RotatedPillarBlock)block);
+                case WOOD, STRIPPED_WOOD -> this.axisBlock((RotatedPillarBlock)block, texture(source), texture(source));
+                case STAIRS -> this.stairsBlock((StairBlock)block, texture(base));
+                case SLAB -> this.slabBlock((SlabBlock)block, texture(base), texture(base));
+                case FENCE -> this.fenceBlock((FenceBlock)block, texture(base));
+                case FENCE_GATE -> this.fenceGateBlock((FenceGateBlock)block, texture(base));
+                case BUTTON -> this.buttonBlock((ButtonBlock)block, texture(base));
+                case PRESSURE_PLATE -> this.pressurePlateBlock((PressurePlateBlock)block, texture(base));
+                case TRAPDOOR -> this.trapdoorBlockWithRenderType((TrapDoorBlock)block, texture(block), true, mcLoc("cutout"));
+                case DOOR -> this.doorBlockWithRenderType((DoorBlock)block, texture(block, "_bottom"), texture(block, "_top"), mcLoc("cutout"));
+                case SIGN -> this.signBlock((StandingSignBlock)block, (WallSignBlock)source, texture(base));
+                case WALL -> this.wallBlock((WallBlock)block, texture(base));
+                default -> {
+                    if (variant != DreamBlockFamily.Variant.WALL_SIGN && variant != DreamBlockFamily.Variant.WALL_HANGING_SIGN) {
+                        this.simpleBlock(block);
+                    }
+                }
+            }
+        });
     }
 
     private void createCubeBlock(Block block) {
@@ -224,6 +225,16 @@ public class DreamBlockModels extends BlockStateProvider {
         );
     }
 
+    private void createPuffballBlock(Block block, int variantCount) {
+        ConfiguredModel[] models = new ConfiguredModel[variantCount];
+        for (int i = 0; i < variantCount; i++) {
+            models[i] = new ConfiguredModel(this.puffballModelBuilder(block, i));
+        }
+
+        this.getVariantBuilder(block)
+                .partialState().addModels(models);
+    }
+
     private void createHyacinthBlock(Block block) {
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             for (int amount = 1; amount <= 3; amount++) {
@@ -232,6 +243,21 @@ public class DreamBlockModels extends BlockStateProvider {
                         .with(HyacinthFlowerBlock.AMOUNT, amount)
                         .modelForState()
                         .modelFile(this.hyacinthModelBuilder(block, amount))
+                        .rotationY(facingRotation(direction))
+                        .addModel()
+                ;
+            }
+        }
+    }
+
+    private void createStackableFlowerBlock(Block block) {
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            for (int amount = 1; amount <= 3; amount++) {
+                this.getVariantBuilder(block).partialState()
+                        .with(StackableFlowerBlock.FACING, direction)
+                        .with(StackableFlowerBlock.AMOUNT, amount)
+                        .modelForState()
+                        .modelFile(this.lupineModelBuilder(block, amount))
                         .rotationY(facingRotation(direction))
                         .addModel();
             }
@@ -320,6 +346,16 @@ public class DreamBlockModels extends BlockStateProvider {
         this.getVariantBuilder(block)
                 .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER).addModels(modelFromList(lowerModel))
                 .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER).addModels(modelFromList(upperModel));
+    }
+
+    private void createBlockWithModelVariants(Block block, int variantCount, Function<ResourceLocation, ModelFile> model) {
+        List<ModelFile> models = new ArrayList<>();
+        for (int i = 0; i < variantCount; i++) {
+            models.add(model.apply(texture(block)));
+        }
+
+        this.getVariantBuilder(block)
+                .partialState().addModels(modelFromList(models));
     }
 
     private void createBlockWithVariants(Block block, int variantCount, Function<ResourceLocation, ModelFile> model) {
@@ -423,8 +459,20 @@ public class DreamBlockModels extends BlockStateProvider {
                 .renderType("cutout");
     }
 
+    private BlockModelBuilder puffballModelBuilder(Block block, int variantCount) {
+        return this.models().withExistingParent(name(block) + variantSuffix(variantCount), modLoc("block/template_puffball" + variantSuffix(variantCount)))
+                .texture("flower", texture(block, "_flower"))
+                .renderType("cutout");
+    }
+
     private BlockModelBuilder hyacinthModelBuilder(Block block, int amount) {
         return this.models().withExistingParent(name(block) + "_" + amount, modLoc("block/template_hyacinth_" + amount))
+                .texture("flower", texture(block, "_flower"))
+                .renderType("cutout");
+    }
+
+    private BlockModelBuilder lupineModelBuilder(Block block, int amount) {
+        return this.models().withExistingParent(name(block) + "_" + amount, modLoc("block/template_lupine_" + amount))
                 .texture("flower", texture(block, "_flower"))
                 .renderType("cutout");
     }

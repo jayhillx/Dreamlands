@@ -1,6 +1,9 @@
 package com.mystanica.dreamlands.common.worldgen.feature;
 
+import com.mystanica.dreamlands.common.block.CloverBlock;
+import com.mystanica.dreamlands.common.block.DirectionalBlock;
 import com.mystanica.dreamlands.common.block.HyacinthFlowerBlock;
+import com.mystanica.dreamlands.common.block.StackableBlock;
 import com.mystanica.dreamlands.common.worldgen.feature.config.*;
 import com.mystanica.dreamlands.common.worldgen.placement.DreamTreePlacements;
 import com.mystanica.dreamlands.init.DreamBlocks;
@@ -45,9 +48,6 @@ public class DreamVegetationFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_FOREST_MOSS = createKey("patch_forest_moss");
 
     /// dreamland
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_WILDERNESS = createKey("trees_wilderness");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SHRUBS_WILDERNESS = createKey("shrubs_wilderness");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_GROUND_IVY = createKey("patch_ground_ivy");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_CLOVERS = createKey("patch_clovers");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_WHITE_CLOVERS = createKey("patch_white_clovers");
@@ -58,25 +58,26 @@ public class DreamVegetationFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWER_PINK_HYACINTH = createKey("flower_pink_hyacinth");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWER_MAGENTA_HYACINTH = createKey("flower_magenta_hyacinth");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWER_PURPLE_HYACINTH = createKey("flower_purple_hyacinth");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWER_PURPLE_LUPINE = createKey("flower_purple_lupine");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWER_VIOLETS = createKey("flower_violets");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_WILDERNESS = createKey("trees_wilderness");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SHRUBS_WILDERNESS = createKey("shrubs_wilderness");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_ASPEN_FOREST = createKey("trees_aspen_forest");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SHRUBS_ASPEN_FOREST = createKey("shrubs_aspen_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_EVERGREEN_FOREST = createKey("trees_evergreen_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SHRUBS_EVERGREEN_FOREST = createKey("shrubs_evergreen_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUSHROOMS_TOADSTOOL = createKey("mushrooms_toadstool");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_TOADSTOOL = createKey("patch_toadstool");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_ETHEREAL_FOREST = createKey("trees_ethereal_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SHRUBS_ETHEREAL_FOREST = createKey("shrubs_ethereal_forest");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_COTTON_CANDY_FOREST = createKey("trees_cotton_candy_forest");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_WISTERIA_GROVE = createKey("trees_wisteria_grove");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_FAERIE_FOREST = createKey("trees_faerie_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SHRUBS_FAERIE_FOREST = createKey("shrubs_faerie_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUSHROOMS_PINK = createKey("mushrooms_pink");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_PINK_MUSHROOM = createKey("patch_pink_mushroom");
-    
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         HolderGetter<PlacedFeature> getter = context.lookup(Registries.PLACED_FEATURE);
         Holder<PlacedFeature> FOREST_SHRUB_CHECKED = getter.getOrThrow(DreamTreePlacements.FOREST_SHRUB_CHECKED);
@@ -87,6 +88,8 @@ public class DreamVegetationFeatures {
         Holder<PlacedFeature> LARGE_DREAMY_SHRUB_CHECKED = getter.getOrThrow(DreamTreePlacements.LARGE_DREAMY_SHRUB_CHECKED);
         Holder<PlacedFeature> DREAMY_MUSHROOM_CHECKED = getter.getOrThrow(DreamTreePlacements.DREAMY_MUSHROOM_CHECKED);
         Holder<PlacedFeature> LARGE_DREAMY_MUSHROOM_CHECKED = getter.getOrThrow(DreamTreePlacements.LARGE_DREAMY_MUSHROOM_CHECKED);
+        Holder<PlacedFeature> ASPEN_TREE_CHECKED = getter.getOrThrow(DreamTreePlacements.ASPEN_TREE_CHECKED);
+        Holder<PlacedFeature> TALL_ASPEN_TREE_CHECKED = getter.getOrThrow(DreamTreePlacements.TALL_ASPEN_TREE_CHECKED);
         Holder<PlacedFeature> EVERGREEN_TREE_CHECKED = getter.getOrThrow(DreamTreePlacements.EVERGREEN_TREE_CHECKED);
         Holder<PlacedFeature> LARGE_EVERGREEN_TREE_CHECKED = getter.getOrThrow(DreamTreePlacements.LARGE_EVERGREEN_TREE_CHECKED);
         Holder<PlacedFeature> TOADSTOOL_CHECKED = getter.getOrThrow(DreamTreePlacements.TOADSTOOL_CHECKED);
@@ -115,16 +118,17 @@ public class DreamVegetationFeatures {
         );
         FeatureUtils.register(context, PATCH_DREAMY_MUSHROOM, Feature.RANDOM_PATCH, plantPatch(48, 4, DreamBlocks.DREAMY_MUSHROOM.get()));
 
-        FeatureUtils.register(context, PATCH_GROUND_IVY, DreamFeatures.CLOVER_PATCH.get(), new PatchConfiguration(BlockStateProvider.simple(DreamBlocks.GROUND_IVY.get()), 5, 128));
-        FeatureUtils.register(context, PATCH_CLOVERS, DreamFeatures.CLOVER_PATCH.get(), new PatchConfiguration(BlockStateProvider.simple(DreamBlocks.CLOVERS.get()), 5, 128));
-        FeatureUtils.register(context, PATCH_WHITE_CLOVERS, DreamFeatures.CLOVER_PATCH.get(), new PatchConfiguration(BlockStateProvider.simple(DreamBlocks.WHITE_CLOVERS.get()), 5, 128));
-        FeatureUtils.register(context, PATCH_PINK_CLOVERS, DreamFeatures.CLOVER_PATCH.get(), new PatchConfiguration(BlockStateProvider.simple(DreamBlocks.PINK_CLOVERS.get()), 5, 128));
+        FeatureUtils.register(context, PATCH_GROUND_IVY, Feature.RANDOM_PATCH, cloverPatch(DreamBlocks.GROUND_IVY.get()));
+        FeatureUtils.register(context, PATCH_CLOVERS, Feature.RANDOM_PATCH, cloverPatch(DreamBlocks.CLOVERS.get()));
+        FeatureUtils.register(context, PATCH_WHITE_CLOVERS, Feature.RANDOM_PATCH, cloverPatch(DreamBlocks.WHITE_CLOVERS.get()));
+        FeatureUtils.register(context, PATCH_PINK_CLOVERS, Feature.RANDOM_PATCH, cloverPatch(DreamBlocks.PINK_CLOVERS.get()));
         FeatureUtils.register(context, FLOWER_PETUNIA, Feature.RANDOM_PATCH, plantPatch(82, 7, DreamBlocks.PETUNIA.get()));
-        FeatureUtils.register(context, FLOWER_PERIWINKLE, DreamFeatures.CLOVER_PATCH.get(), new PatchConfiguration(BlockStateProvider.simple(DreamBlocks.PERIWINKLE.get()), 5, 128));
+        FeatureUtils.register(context, FLOWER_PERIWINKLE, Feature.RANDOM_PATCH, plantPatch(82, 7, DreamBlocks.PERIWINKLE.get()));
         FeatureUtils.register(context, FLOWER_PINK_FOXGLOVE, Feature.RANDOM_PATCH, plantPatch(96, 7, DreamBlocks.PINK_FOXGLOVE.get()));
         FeatureUtils.register(context, FLOWER_PINK_HYACINTH, Feature.RANDOM_PATCH, hyacinthPatch(DreamBlocks.PINK_HYACINTH.get()));
         FeatureUtils.register(context, FLOWER_MAGENTA_HYACINTH, Feature.RANDOM_PATCH, hyacinthPatch(DreamBlocks.MAGENTA_HYACINTH.get()));
         FeatureUtils.register(context, FLOWER_PURPLE_HYACINTH, Feature.RANDOM_PATCH, hyacinthPatch(DreamBlocks.PURPLE_HYACINTH.get()));
+        FeatureUtils.register(context, FLOWER_PURPLE_LUPINE, Feature.RANDOM_PATCH, stackableFlowerPatch(DreamBlocks.PURPLE_LUPINE.get()));
         FeatureUtils.register(context, FLOWER_VIOLETS, Feature.RANDOM_PATCH, plantPatch(96, 7, DreamBlocks.VIOLETS.get()));
 
         FeatureUtils.register(context, TREES_WILDERNESS, Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(List.of(
@@ -133,6 +137,14 @@ public class DreamVegetationFeatures {
         FeatureUtils.register(context, SHRUBS_WILDERNESS, Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(List.of(
                 new WeightedPlacedFeature(DREAMY_SHRUB_CHECKED, 0.5F),
                 new WeightedPlacedFeature(LARGE_DREAMY_SHRUB_CHECKED, 0.6F)), DREAMY_SHRUB_CHECKED)
+        );
+
+        FeatureUtils.register(context, TREES_ASPEN_FOREST, Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(List.of(
+                new WeightedPlacedFeature(ASPEN_TREE_CHECKED, 0.5F),
+                new WeightedPlacedFeature(TALL_ASPEN_TREE_CHECKED, 0.3F)), ASPEN_TREE_CHECKED)
+        );
+        FeatureUtils.register(context, SHRUBS_ASPEN_FOREST, Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(List.of(
+                new WeightedPlacedFeature(DREAMY_SHRUB_CHECKED, 1.0F)), DREAMY_SHRUB_CHECKED)
         );
 
         FeatureUtils.register(context, TREES_EVERGREEN_FOREST, Feature.RANDOM_SELECTOR, new RandomFeatureConfiguration(List.of(
@@ -181,18 +193,46 @@ public class DreamVegetationFeatures {
         FeatureUtils.register(context, PATCH_PINK_MUSHROOM, Feature.RANDOM_PATCH, plantPatch(48, 4, DreamBlocks.PINK_MUSHROOM.get()));
     }
 
+    private static RandomPatchConfiguration cloverPatch(Block block) {
+        SimpleWeightedRandomList.Builder<BlockState> builder = SimpleWeightedRandomList.builder();
+        for (int i = 1; i <= 4; i++) {
+            for (Direction direction : Direction.Plane.HORIZONTAL) {
+                builder.add(block.defaultBlockState()
+                                .setValue(CloverBlock.AMOUNT, i)
+                                .setValue(CloverBlock.FACING, direction),
+                        1);
+            }
+        }
+
+        return plantPatch(144, 5, new WeightedStateProvider(builder));
+    }
+
     private static RandomPatchConfiguration hyacinthPatch(Block block) {
         SimpleWeightedRandomList.Builder<BlockState> builder = SimpleWeightedRandomList.builder();
         for (int i = 1; i <= 3; i++) {
             for (Direction direction : Direction.Plane.HORIZONTAL) {
                 builder.add(block.defaultBlockState()
-                        .setValue(HyacinthFlowerBlock.AMOUNT, i)
-                        .setValue(HyacinthFlowerBlock.FACING, direction),
+                                .setValue(HyacinthFlowerBlock.AMOUNT, i)
+                                .setValue(HyacinthFlowerBlock.FACING, direction),
                         1);
             }
         }
 
-        return plantPatch(82, 4, new WeightedStateProvider(builder));
+        return plantPatch(128, 4, new WeightedStateProvider(builder));
+    }
+
+    private static RandomPatchConfiguration stackableFlowerPatch(Block block) {
+        SimpleWeightedRandomList.Builder<BlockState> builder = SimpleWeightedRandomList.builder();
+        for (int i = 1; i <= 3; i++) {
+            for (Direction direction : Direction.Plane.HORIZONTAL) {
+                builder.add(block.defaultBlockState()
+                                .setValue(StackableBlock.AMOUNT, i)
+                                .setValue(DirectionalBlock.FACING, direction),
+                        1);
+            }
+        }
+
+        return plantPatch(144, 7, new WeightedStateProvider(builder));
     }
 
     private static RandomPatchConfiguration plantPatch(Block block) {
@@ -211,8 +251,10 @@ public class DreamVegetationFeatures {
                 provider,
                 BlockPredicate.allOf(
                         BlockPredicate.anyOf(BlockPredicate.ONLY_IN_AIR_PREDICATE, BlockPredicate.replaceable()),
+                        BlockPredicate.matchesBlocks(Direction.UP.getNormal(), Blocks.AIR),
+                        BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), grasses()),
                         BlockPredicate.noFluid(),
-                        BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), grasses())
+                        BlockPredicate.not(BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), DreamBlocks.FOREST_MOSS_BLOCK.get()))
                 )
         );
     }

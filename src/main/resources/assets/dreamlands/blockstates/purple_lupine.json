@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "amount=1,facing=east": {
+      "model": "dreamlands:block/purple_lupine_1",
+      "y": 90
+    },
+    "amount=1,facing=north": {
+      "model": "dreamlands:block/purple_lupine_1"
+    },
+    "amount=1,facing=south": {
+      "model": "dreamlands:block/purple_lupine_1",
+      "y": 180
+    },
+    "amount=1,facing=west": {
+      "model": "dreamlands:block/purple_lupine_1",
+      "y": 270
+    },
+    "amount=2,facing=east": {
+      "model": "dreamlands:block/purple_lupine_2",
+      "y": 90
+    },
+    "amount=2,facing=north": {
+      "model": "dreamlands:block/purple_lupine_2"
+    },
+    "amount=2,facing=south": {
+      "model": "dreamlands:block/purple_lupine_2",
+      "y": 180
+    },
+    "amount=2,facing=west": {
+      "model": "dreamlands:block/purple_lupine_2",
+      "y": 270
+    },
+    "amount=3,facing=east": {
+      "model": "dreamlands:block/purple_lupine_3",
+      "y": 90
+    },
+    "amount=3,facing=north": {
+      "model": "dreamlands:block/purple_lupine_3"
+    },
+    "amount=3,facing=south": {
+      "model": "dreamlands:block/purple_lupine_3",
+      "y": 180
+    },
+    "amount=3,facing=west": {
+      "model": "dreamlands:block/purple_lupine_3",
+      "y": 270
+    }
+  }
+}

@@ -2,6 +2,7 @@ package com.mystanica.dreamlands.datagen.provider;
 
 import com.mystanica.dreamlands.common.block.HyacinthFlowerBlock;
 import com.mystanica.dreamlands.common.block.MushroomBlock;
+import com.mystanica.dreamlands.common.block.StackableBlock;
 import com.mystanica.dreamlands.datagen.DreamBlockFamilies;
 import com.mystanica.dreamlands.datagen.DreamBlockFamily;
 import com.mystanica.dreamlands.init.DreamBlocks;
@@ -50,17 +51,19 @@ public class DreamBlockLoot extends BlockLootSubProvider {
         this.createFlowerBedDrop(DreamBlocks.WHITE_CLOVERS.get());
         this.createFlowerBedDrop(DreamBlocks.PINK_CLOVERS.get());
         this.dropSelf(DreamBlocks.PETUNIA.get());
-        this.createFlowerBedDrop(DreamBlocks.PERIWINKLE.get());
+        this.dropSelf(DreamBlocks.PERIWINKLE.get());
+        ///this.dropSelf(DreamBlocks.PINK_PUFFBALL.get());
         this.createTallPlantDrop(DreamBlocks.PINK_FOXGLOVE.get());
         this.createHyacinthDrop(DreamBlocks.PINK_HYACINTH.get());
         this.createHyacinthDrop(DreamBlocks.MAGENTA_HYACINTH.get());
         this.createHyacinthDrop(DreamBlocks.PURPLE_HYACINTH.get());
+        this.createStackablePlantDrop(DreamBlocks.PURPLE_LUPINE.get());
         this.dropSelf(DreamBlocks.VIOLETS.get());
         ///////////////////////////////////////
         this.createLeavesAndSaplings(DreamBlocks.DREAMY_LEAVES.get(), DreamBlocks.DREAMY_SAPLING.get());
         this.dropSelf(DreamBlocks.DREAMY_MUSHROOM_BLOCK.get());
         this.createMushroomDrop(DreamBlocks.DREAMY_MUSHROOM.get());
-        ///this.createLeavesAndSaplings(DreamBlocks.ASPEN_LEAVES.get(), DreamBlocks.ASPEN_SAPLING.get());
+        this.createLeavesAndSaplings(DreamBlocks.ASPEN_LEAVES.get(), DreamBlocks.ASPEN_SAPLING.get());
         this.createLeavesAndSaplings(DreamBlocks.EVERGREEN_LEAVES.get(), DreamBlocks.EVERGREEN_SAPLING.get());
         this.dropSelf(DreamBlocks.TOADSTOOL_BLOCK.get());
         this.createMushroomDrop(DreamBlocks.TOADSTOOL.get());
@@ -82,6 +85,7 @@ public class DreamBlockLoot extends BlockLootSubProvider {
         this.dropPottedContents(DreamBlocks.POTTED_FOREST_MUSHROOM.get());
         this.dropPottedContents(DreamBlocks.POTTED_DREAMY_SAPLING.get());
         this.dropPottedContents(DreamBlocks.POTTED_DREAMY_MUSHROOM.get());
+        this.dropPottedContents(DreamBlocks.POTTED_ASPEN_SAPLING.get());
         this.dropPottedContents(DreamBlocks.POTTED_EVERGREEN_SAPLING.get());
         this.dropPottedContents(DreamBlocks.POTTED_TOADSTOOL.get());
         this.dropPottedContents(DreamBlocks.POTTED_ETHEREAL_SAPLING.get());
@@ -152,6 +156,16 @@ public class DreamBlockLoot extends BlockLootSubProvider {
                                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                         .setProperties(StatePropertiesPredicate.Builder.properties()
                                                 .hasProperty(HyacinthFlowerBlock.AMOUNT, i))))))));
+    }
+
+    private void createStackablePlantDrop(Block block) {
+        this.add(block, LootTable.lootTable().withPool(LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .add(this.applyExplosionDecay(block, LootItem.lootTableItem(block)
+                        .apply(IntStream.rangeClosed(1, 3).boxed().toList(), i -> SetItemCountFunction.setCount(ConstantValue.exactly((float) i))
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                .hasProperty(StackableBlock.AMOUNT, i))))))));
     }
 
     @Nonnull

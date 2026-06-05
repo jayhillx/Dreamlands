@@ -31,7 +31,35 @@ public class DreamlandBiomes {
 
         return BiomeTemplate.biome(
                 true,
-                0.95F,
+                0.7F,
+                0.5F,
+                8108719,
+                7058332,
+                9883614,
+                13299180,
+                7962936,
+                7962936,
+                mobBuilder,
+                biomeBuilder
+        );
+    }
+
+    public static Biome aspenForest(HolderGetter<PlacedFeature> feature, HolderGetter<ConfiguredWorldCarver<?>> carver) {
+        MobSpawnSettings.Builder mobBuilder = new MobSpawnSettings.Builder();
+        BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(feature, carver);
+
+        mobBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 100, 4, 8)); /// change to bunny
+
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, DreamVegetationPlacements.TREES_ASPEN_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, DreamVegetationPlacements.SHRUBS_ASPEN_FOREST);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, DreamVegetationPlacements.FLOWER_PURPLE_LUPINE);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, DreamVegetationPlacements.PATCH_CLOVERS);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, DreamVegetationPlacements.PATCH_DREAMY_GRASS);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, DreamVegetationPlacements.PATCH_TALL_DREAMY_GRASS);
+
+        return BiomeTemplate.biome(
+                true,
+                0.8F,
                 0.5F,
                 8108719,
                 7058332,
@@ -69,7 +97,7 @@ public class DreamlandBiomes {
                 5801581,
                 9883614,
                 13097419,
-                6979906,
+                7952936,
                 7962936,
                 mobBuilder,
                 biomeBuilder
@@ -100,7 +128,7 @@ public class DreamlandBiomes {
                 9332896,
                 11067361,
                 14207977,
-                6787440, //6457704,
+                7181933, //6787440, //6457704,
                 7508581,
                 mobBuilder,
                 biomeBuilder

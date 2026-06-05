@@ -24,14 +24,16 @@ public class DreamCompat {
         flammablePlants(DreamBlocks.PINK_CLOVERS.get());
         flammablePlants(DreamBlocks.PETUNIA.get());
         flammablePlants(DreamBlocks.PERIWINKLE.get());
+        ///flammablePlants(DreamBlocks.PINK_PUFFBALL.get());
         flammablePlants(DreamBlocks.PINK_FOXGLOVE.get());
         flammablePlants(DreamBlocks.PINK_HYACINTH.get());
         flammablePlants(DreamBlocks.MAGENTA_HYACINTH.get());
         flammablePlants(DreamBlocks.PURPLE_HYACINTH.get());
+        flammablePlants(DreamBlocks.PURPLE_LUPINE.get());
         flammablePlants(DreamBlocks.VIOLETS.get());
         ///////////////////////////////////////
         flammableLeaves(DreamBlocks.DREAMY_LEAVES.get());
-        ///flammableLeaves(DreamBlocks.ASPEN_LEAVES.get());
+        flammableLeaves(DreamBlocks.ASPEN_LEAVES.get());
         flammableLeaves(DreamBlocks.EVERGREEN_LEAVES.get());
         flammableLeaves(DreamBlocks.ETHEREAL_LEAVES.get());
         flammableLeaves(DreamBlocks.LILAC_BUSH_LEAVES.get());
@@ -88,18 +90,20 @@ public class DreamCompat {
         BlockDataUtils.compostable(DreamItems.PINK_CLOVERS.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.PETUNIA.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.PERIWINKLE.get(), 0.3F);
+        ///BlockDataUtils.compostable(DreamItems.PINK_PUFFBALL.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.PINK_FOXGLOVE.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.PINK_HYACINTH.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.MAGENTA_HYACINTH.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.PURPLE_HYACINTH.get(), 0.3F);
+        BlockDataUtils.compostable(DreamItems.PURPLE_LUPINE.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.VIOLETS.get(), 0.3F);
         ///////////////////////////////////////
         BlockDataUtils.compostable(DreamItems.DREAMY_LEAVES.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.DREAMY_SAPLING.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.DREAMY_MUSHROOM_BLOCK.get(), 0.85F);
         BlockDataUtils.compostable(DreamItems.DREAMY_MUSHROOM.get(), 0.3F);
-        ///BlockDataUtils.compostable(DreamItems.ASPEN_LEAVES.get(), 0.3F);
-        ///BlockDataUtils.compostable(DreamItems.ASPEN_SAPLING.get(), 0.3F);
+        BlockDataUtils.compostable(DreamItems.ASPEN_LEAVES.get(), 0.3F);
+        BlockDataUtils.compostable(DreamItems.ASPEN_SAPLING.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.EVERGREEN_LEAVES.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.EVERGREEN_SAPLING.get(), 0.3F);
         BlockDataUtils.compostable(DreamItems.TOADSTOOL.get(), 0.3F);
@@ -144,8 +148,8 @@ public class DreamCompat {
     public static void registerStrippables() {
         BlockDataUtils.strippable(DreamBlocks.DREAMY_LOG.get(), DreamBlocks.STRIPPED_DREAMY_LOG.get());
         BlockDataUtils.strippable(DreamBlocks.DREAMY_WOOD.get(), DreamBlocks.STRIPPED_DREAMY_WOOD.get());
-        ///BlockDataUtils.strippable(DreamBlocks.ASPEN_LOG.get(), DreamBlocks.STRIPPED_ASPEN_LOG.get());
-        ///BlockDataUtils.strippable(DreamBlocks.ASPEN_WOOD.get(), DreamBlocks.STRIPPED_ASPEN_WOOD.get());
+        BlockDataUtils.strippable(DreamBlocks.ASPEN_LOG.get(), DreamBlocks.STRIPPED_ASPEN_LOG.get());
+        BlockDataUtils.strippable(DreamBlocks.ASPEN_WOOD.get(), DreamBlocks.STRIPPED_ASPEN_WOOD.get());
         BlockDataUtils.strippable(DreamBlocks.EVERGREEN_LOG.get(), DreamBlocks.STRIPPED_EVERGREEN_LOG.get());
         BlockDataUtils.strippable(DreamBlocks.EVERGREEN_WOOD.get(), DreamBlocks.STRIPPED_EVERGREEN_WOOD.get());
         BlockDataUtils.strippable(DreamBlocks.ETHEREAL_LOG.get(), DreamBlocks.STRIPPED_ETHEREAL_LOG.get());

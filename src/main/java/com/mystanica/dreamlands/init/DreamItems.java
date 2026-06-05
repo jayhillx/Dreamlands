@@ -39,10 +39,12 @@ public class DreamItems {
     public static final RegistryObject<Item> PINK_CLOVERS = ITEMS.register("pink_clovers", () -> blockItem(DreamBlocks.PINK_CLOVERS.get()));
     public static final RegistryObject<Item> PETUNIA = ITEMS.register("petunia", () -> blockItem(DreamBlocks.PETUNIA.get()));
     public static final RegistryObject<Item> PERIWINKLE = ITEMS.register("periwinkle", () -> blockItem(DreamBlocks.PERIWINKLE.get()));
+    ///public static final RegistryObject<Item> PINK_PUFFBALL = ITEMS.register("pink_puffball", () -> blockItem(DreamBlocks.PINK_PUFFBALL.get()));
     public static final RegistryObject<Item> PINK_FOXGLOVE = ITEMS.register("pink_foxglove", () -> blockItem(DreamBlocks.PINK_FOXGLOVE.get()));
     public static final RegistryObject<Item> PINK_HYACINTH = ITEMS.register("pink_hyacinth", () -> blockItem(DreamBlocks.PINK_HYACINTH.get()));
     public static final RegistryObject<Item> MAGENTA_HYACINTH = ITEMS.register("magenta_hyacinth", () -> blockItem(DreamBlocks.MAGENTA_HYACINTH.get()));
     public static final RegistryObject<Item> PURPLE_HYACINTH = ITEMS.register("purple_hyacinth", () -> blockItem(DreamBlocks.PURPLE_HYACINTH.get()));
+    public static final RegistryObject<Item> PURPLE_LUPINE = ITEMS.register("purple_lupine", () -> blockItem(DreamBlocks.PURPLE_LUPINE.get()));
     public static final RegistryObject<Item> VIOLETS = ITEMS.register("violets", () -> blockItem(DreamBlocks.VIOLETS.get()));
 
     /// dreamstone
@@ -93,25 +95,25 @@ public class DreamItems {
     public static final RegistryObject<Item> DREAMY_CHEST_BOAT = ITEMS.register("dreamy_chest_boat", () -> chestBoatItem(DreamBoat.Type.DREAMY));
 
     /// aspen forest
-    ///public static final RegistryObject<Item> ASPEN_LEAVES = ITEMS.register("aspen_leaves", () -> blockItem(DreamBlocks.ASPEN_LEAVES.get()));
-    ///public static final RegistryObject<Item> ASPEN_SAPLING = ITEMS.register("aspen_sapling", () -> blockItem(DreamBlocks.ASPEN_SAPLING.get()));
-    ///public static final RegistryObject<Item> ASPEN_LOG = ITEMS.register("aspen_log", () -> blockItem(DreamBlocks.ASPEN_LOG.get()));
-    ///public static final RegistryObject<Item> STRIPPED_ASPEN_LOG = ITEMS.register("stripped_aspen_log", () -> blockItem(DreamBlocks.STRIPPED_ASPEN_LOG.get()));
-    ///public static final RegistryObject<Item> ASPEN_WOOD = ITEMS.register("aspen_wood", () -> blockItem(DreamBlocks.ASPEN_WOOD.get()));
-    ///public static final RegistryObject<Item> STRIPPED_ASPEN_WOOD = ITEMS.register("stripped_aspen_wood", () -> blockItem(DreamBlocks.STRIPPED_ASPEN_WOOD.get()));
-    ///public static final RegistryObject<Item> ASPEN_PLANKS = ITEMS.register("aspen_planks", () -> blockItem(DreamBlocks.ASPEN_PLANKS.get()));
-    ///public static final RegistryObject<Item> ASPEN_STAIRS = ITEMS.register("aspen_stairs", () -> blockItem(DreamBlocks.ASPEN_STAIRS.get()));
-    ///public static final RegistryObject<Item> ASPEN_SLAB = ITEMS.register("aspen_slab", () -> blockItem(DreamBlocks.ASPEN_SLAB.get()));
-    ///public static final RegistryObject<Item> ASPEN_FENCE = ITEMS.register("aspen_fence", () -> blockItem(DreamBlocks.ASPEN_FENCE.get()));
-    ///public static final RegistryObject<Item> ASPEN_FENCE_GATE = ITEMS.register("aspen_fence_gate", () -> blockItem(DreamBlocks.ASPEN_FENCE_GATE.get()));
-    ///public static final RegistryObject<Item> ASPEN_BUTTON = ITEMS.register("aspen_button", () -> blockItem(DreamBlocks.ASPEN_BUTTON.get()));
-    ///public static final RegistryObject<Item> ASPEN_PRESSURE_PLATE = ITEMS.register("aspen_pressure_plate", () -> blockItem(DreamBlocks.ASPEN_PRESSURE_PLATE.get()));
-    ///public static final RegistryObject<Item> ASPEN_TRAPDOOR = ITEMS.register("aspen_trapdoor", () -> blockItem(DreamBlocks.ASPEN_TRAPDOOR.get()));
-    ///public static final RegistryObject<Item> ASPEN_DOOR = ITEMS.register("aspen_door", () -> blockItem(DreamBlocks.ASPEN_DOOR.get()));
-    ///public static final RegistryObject<Item> ASPEN_SIGN = ITEMS.register("aspen_sign", () -> signItem(DreamBlocks.ASPEN_SIGN.get(), DreamBlocks.ASPEN_WALL_SIGN.get()));
-    ///public static final RegistryObject<Item> ASPEN_HANGING_SIGN = ITEMS.register("aspen_hanging_sign", () -> hangingSignItem(DreamBlocks.ASPEN_HANGING_SIGN.get(), DreamBlocks.ASPEN_WALL_HANGING_SIGN.get()));
-    ///public static final RegistryObject<Item> ASPEN_BOAT = ITEMS.register("aspen_boat", () -> boatItem(DreamBoat.Type.ASPEN));
-    ///public static final RegistryObject<Item> ASPEN_CHEST_BOAT = ITEMS.register("aspen_chest_boat", () -> chestBoatItem(DreamBoat.Type.ASPEN));
+    public static final RegistryObject<Item> ASPEN_LEAVES = ITEMS.register("aspen_leaves", () -> blockItem(DreamBlocks.ASPEN_LEAVES.get()));
+    public static final RegistryObject<Item> ASPEN_SAPLING = ITEMS.register("aspen_sapling", () -> blockItem(DreamBlocks.ASPEN_SAPLING.get()));
+    public static final RegistryObject<Item> ASPEN_LOG = ITEMS.register("aspen_log", () -> blockItem(DreamBlocks.ASPEN_LOG.get()));
+    public static final RegistryObject<Item> STRIPPED_ASPEN_LOG = ITEMS.register("stripped_aspen_log", () -> blockItem(DreamBlocks.STRIPPED_ASPEN_LOG.get()));
+    public static final RegistryObject<Item> ASPEN_WOOD = ITEMS.register("aspen_wood", () -> blockItem(DreamBlocks.ASPEN_WOOD.get()));
+    public static final RegistryObject<Item> STRIPPED_ASPEN_WOOD = ITEMS.register("stripped_aspen_wood", () -> blockItem(DreamBlocks.STRIPPED_ASPEN_WOOD.get()));
+    public static final RegistryObject<Item> ASPEN_PLANKS = ITEMS.register("aspen_planks", () -> blockItem(DreamBlocks.ASPEN_PLANKS.get()));
+    public static final RegistryObject<Item> ASPEN_STAIRS = ITEMS.register("aspen_stairs", () -> blockItem(DreamBlocks.ASPEN_STAIRS.get()));
+    public static final RegistryObject<Item> ASPEN_SLAB = ITEMS.register("aspen_slab", () -> blockItem(DreamBlocks.ASPEN_SLAB.get()));
+    public static final RegistryObject<Item> ASPEN_FENCE = ITEMS.register("aspen_fence", () -> blockItem(DreamBlocks.ASPEN_FENCE.get()));
+    public static final RegistryObject<Item> ASPEN_FENCE_GATE = ITEMS.register("aspen_fence_gate", () -> blockItem(DreamBlocks.ASPEN_FENCE_GATE.get()));
+    public static final RegistryObject<Item> ASPEN_BUTTON = ITEMS.register("aspen_button", () -> blockItem(DreamBlocks.ASPEN_BUTTON.get()));
+    public static final RegistryObject<Item> ASPEN_PRESSURE_PLATE = ITEMS.register("aspen_pressure_plate", () -> blockItem(DreamBlocks.ASPEN_PRESSURE_PLATE.get()));
+    public static final RegistryObject<Item> ASPEN_TRAPDOOR = ITEMS.register("aspen_trapdoor", () -> blockItem(DreamBlocks.ASPEN_TRAPDOOR.get()));
+    public static final RegistryObject<Item> ASPEN_DOOR = ITEMS.register("aspen_door", () -> blockItem(DreamBlocks.ASPEN_DOOR.get()));
+    public static final RegistryObject<Item> ASPEN_SIGN = ITEMS.register("aspen_sign", () -> signItem(DreamBlocks.ASPEN_SIGN.get(), DreamBlocks.ASPEN_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ASPEN_HANGING_SIGN = ITEMS.register("aspen_hanging_sign", () -> hangingSignItem(DreamBlocks.ASPEN_HANGING_SIGN.get(), DreamBlocks.ASPEN_WALL_HANGING_SIGN.get()));
+    public static final RegistryObject<Item> ASPEN_BOAT = ITEMS.register("aspen_boat", () -> boatItem(DreamBoat.Type.ASPEN));
+    public static final RegistryObject<Item> ASPEN_CHEST_BOAT = ITEMS.register("aspen_chest_boat", () -> chestBoatItem(DreamBoat.Type.ASPEN));
 
     /// evergreen forest
     public static final RegistryObject<Item> EVERGREEN_LEAVES = ITEMS.register("evergreen_leaves", () -> blockItem(DreamBlocks.EVERGREEN_LEAVES.get()));
@@ -256,6 +258,10 @@ public class DreamItems {
     public static final RegistryObject<Item> MUSHROOM_BOAT = ITEMS.register("mushroom_boat", () -> boatItem(DreamBoat.Type.MUSHROOM));
     public static final RegistryObject<Item> MUSHROOM_CHEST_BOAT = ITEMS.register("mushroom_chest_boat", () -> chestBoatItem(DreamBoat.Type.MUSHROOM));
 
+    public static final RegistryObject<Item> DREAMLANDS = ITEMS.register("dreamlands", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> DREAMLAND = ITEMS.register("dreamland", () -> new Item(new Item.Properties().stacksTo(1)));
+    ///public static final RegistryObject<Item> NIGHTMOOR = ITEMS.register("nightmoor", () -> new Item(new Item.Properties().stacksTo(1)));
+    ///
     ///public static final RegistryObject<Item> GRIMSTONE = ITEMS.register("grimstone", () -> blockItem(DreamBlocks.GRIMSTONE.get()));
     ///public static final RegistryObject<Item> GRIMSTONE_STAIRS = ITEMS.register("grimstone_stairs", () -> blockItem(DreamBlocks.GRIMSTONE_STAIRS.get()));
     ///public static final RegistryObject<Item> GRIMSTONE_SLAB = ITEMS.register("grimstone_slab", () -> blockItem(DreamBlocks.GRIMSTONE_SLAB.get()));
@@ -280,10 +286,10 @@ public class DreamItems {
     ///public static final RegistryObject<Item> MOSSY_GRIMSTONE_BRICK_STAIRS = ITEMS.register("mossy_grimstone_stairs", () -> blockItem(DreamBlocks.MOSSY_GRIMSTONE_BRICK_STAIRS.get()));
     ///public static final RegistryObject<Item> MOSSY_GRIMSTONE_BRICK_SLAB = ITEMS.register("mossy_grimstone_brick_slab", () -> blockItem(DreamBlocks.MOSSY_GRIMSTONE_BRICK_SLAB.get()));
     ///public static final RegistryObject<Item> MOSSY_GRIMSTONE_BRICK_WALL = ITEMS.register("mossy_grimstone_brick_wall", () -> blockItem(DreamBlocks.MOSSY_GRIMSTONE_BRICK_WALL.get()));
-
+    ///
     ///public static final RegistryObject<Item> GLOOMY_MUSHROOM_BLOCK = ITEMS.register("gloomy_mushroom_block", () -> blockItem(DreamBlocks.GLOOMY_MUSHROOM_BLOCK.get()));
     ///public static final RegistryObject<Item> GLOOMY_MUSHROOM = ITEMS.register("gloomy_mushroom", () -> blockItem(DreamBlocks.GLOOMY_MUSHROOM.get()));
-
+    ///
     ///public static final RegistryObject<Item> GLOOMY_LEAVES = ITEMS.register("gloomy_leaves", () -> blockItem(DreamBlocks.GLOOMY_LEAVES.get()));
     ///public static final RegistryObject<Item> GLOOMY_SAPLING = ITEMS.register("gloomy_sapling", () -> blockItem(DreamBlocks.GLOOMY_SAPLING.get()));
     ///public static final RegistryObject<Item> GLOOMY_LOG = ITEMS.register("gloomy_log", () -> blockItem(DreamBlocks.GLOOMY_LOG.get()));
@@ -303,7 +309,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> GLOOMY_HANGING_SIGN = ITEMS.register("gloomy_hanging_sign", () -> hangingSignItem(DreamBlocks.GLOOMY_HANGING_SIGN.get(), DreamBlocks.GLOOMY_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> GLOOMY_BOAT = ITEMS.register("gloomy_boat", () -> boatItem(DreamBoat.Type.GLOOMY));
     ///public static final RegistryObject<Item> GLOOMY_CHEST_BOAT = ITEMS.register("gloomy_chest_boat", () -> chestBoatItem(DreamBoat.Type.GLOOMY));
-
+    ///
     ///public static final RegistryObject<Item> GRIMWOOD_LEAVES = ITEMS.register("grimwood_leaves", () -> blockItem(DreamBlocks.GRIMWOOD_LEAVES.get()));
     ///public static final RegistryObject<Item> GRIMWOOD_SAPLING = ITEMS.register("grimwood_sapling", () -> blockItem(DreamBlocks.GRIMWOOD_SAPLING.get()));
     ///public static final RegistryObject<Item> GRIMWOOD_LOG = ITEMS.register("grimwood_log", () -> blockItem(DreamBlocks.GRIMWOOD_LOG.get()));
@@ -323,7 +329,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> GRIMWOOD_HANGING_SIGN = ITEMS.register("grimwood_hanging_sign", () -> hangingSignItem(DreamBlocks.GRIMWOOD_HANGING_SIGN.get(), DreamBlocks.GRIMWOOD_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> GRIMWOOD_BOAT = ITEMS.register("grimwood_boat", () -> boatItem(DreamBoat.Type.GRIMWOOD));
     ///public static final RegistryObject<Item> GRIMWOOD_CHEST_BOAT = ITEMS.register("grimwood_chest_boat", () -> chestBoatItem(DreamBoat.Type.GRIMWOOD));
-
+    ///
     ///public static final RegistryObject<Item> DEAD_LEAVES = ITEMS.register("dead_leaves", () -> blockItem(DreamBlocks.DEAD_LEAVES.get()));
     ///public static final RegistryObject<Item> DEAD_SAPLING = ITEMS.register("dead_sapling", () -> blockItem(DreamBlocks.DEAD_SAPLING.get()));
     ///public static final RegistryObject<Item> DEAD_LOG = ITEMS.register("dead_log", () -> blockItem(DreamBlocks.DEAD_LOG.get()));
@@ -343,7 +349,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> DEAD_HANGING_SIGN = ITEMS.register("dead_hanging_sign", () -> hangingSignItem(DreamBlocks.DEAD_HANGING_SIGN.get(), DreamBlocks.DEAD_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> DEAD_BOAT = ITEMS.register("dead_boat", () -> boatItem(DreamBoat.Type.DEAD));
     ///public static final RegistryObject<Item> DEAD_CHEST_BOAT = ITEMS.register("dead_chest_boat", () -> chestBoatItem(DreamBoat.Type.DEAD));
-
+    ///
     ///public static final RegistryObject<Item> PINE_LEAVES = ITEMS.register("pine_leaves", () -> blockItem(DreamBlocks.PINE_LEAVES.get()));
     ///public static final RegistryObject<Item> PINE_SAPLING = ITEMS.register("pine_sapling", () -> blockItem(DreamBlocks.PINE_SAPLING.get()));
     ///public static final RegistryObject<Item> PINE_LOG = ITEMS.register("pine_log", () -> blockItem(DreamBlocks.PINE_LOG.get()));
@@ -363,7 +369,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign", () -> hangingSignItem(DreamBlocks.PINE_HANGING_SIGN.get(), DreamBlocks.PINE_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat", () -> boatItem(DreamBoat.Type.PINE));
     ///public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat", () -> chestBoatItem(DreamBoat.Type.PINE));
-
+    ///
     ///public static final RegistryObject<Item> POISED_LEAVES = ITEMS.register("poised_leaves", () -> blockItem(DreamBlocks.POISED_LEAVES.get()));
     ///public static final RegistryObject<Item> POISED_SAPLING = ITEMS.register("poised_sapling", () -> blockItem(DreamBlocks.POISED_SAPLING.get()));
     ///public static final RegistryObject<Item> POISED_LOG = ITEMS.register("poised_log", () -> blockItem(DreamBlocks.POISED_LOG.get()));
@@ -383,7 +389,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> POISED_HANGING_SIGN = ITEMS.register("poised_hanging_sign", () -> hangingSignItem(DreamBlocks.POISED_HANGING_SIGN.get(), DreamBlocks.POISED_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> POISED_BOAT = ITEMS.register("poised_boat", () -> boatItem(DreamBoat.Type.POISED));
     ///public static final RegistryObject<Item> POISED_CHEST_BOAT = ITEMS.register("poised_chest_boat", () -> chestBoatItem(DreamBoat.Type.POISED));
-
+    ///
     ///public static final RegistryObject<Item> BLOODWOOD_LEAVES = ITEMS.register("bloodwood_leaves", () -> blockItem(DreamBlocks.BLOODWOOD_LEAVES.get()));
     ///public static final RegistryObject<Item> BLOODWOOD_SAPLING = ITEMS.register("bloodwood_sapling", () -> blockItem(DreamBlocks.BLOODWOOD_SAPLING.get()));
     ///public static final RegistryObject<Item> BLOODWOOD_LOG = ITEMS.register("bloodwood_log", () -> blockItem(DreamBlocks.BLOODWOOD_LOG.get()));
@@ -403,7 +409,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> BLOODWOOD_HANGING_SIGN = ITEMS.register("bloodwood_hanging_sign", () -> hangingSignItem(DreamBlocks.BLOODWOOD_HANGING_SIGN.get(), DreamBlocks.BLOODWOOD_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> BLOODWOOD_BOAT = ITEMS.register("bloodwood_boat", () -> boatItem(DreamBoat.Type.BLOODWOOD));
     ///public static final RegistryObject<Item> BLOODWOOD_CHEST_BOAT = ITEMS.register("bloodwood_chest_boat", () -> chestBoatItem(DreamBoat.Type.BLOODWOOD));
-
+    ///
     ///public static final RegistryObject<Item> SOUR_LEAVES = ITEMS.register("sour_leaves", () -> blockItem(DreamBlocks.SOUR_LEAVES.get()));
     ///public static final RegistryObject<Item> SOUR_SAPLING = ITEMS.register("sour_sapling", () -> blockItem(DreamBlocks.SOUR_SAPLING.get()));
     ///public static final RegistryObject<Item> SOUR_LOG = ITEMS.register("sour_log", () -> blockItem(DreamBlocks.SOUR_LOG.get()));
@@ -423,7 +429,7 @@ public class DreamItems {
     ///public static final RegistryObject<Item> SOUR_HANGING_SIGN = ITEMS.register("sour_hanging_sign", () -> hangingSignItem(DreamBlocks.SOUR_HANGING_SIGN.get(), DreamBlocks.SOUR_WALL_HANGING_SIGN.get()));
     ///public static final RegistryObject<Item> SOUR_BOAT = ITEMS.register("sour_boat", () -> boatItem(DreamBoat.Type.SOUR));
     ///public static final RegistryObject<Item> SOUR_CHEST_BOAT = ITEMS.register("sour_chest_boat", () -> chestBoatItem(DreamBoat.Type.SOUR));
-
+    ///
     ///public static final RegistryObject<Item> FUNGUS_BLOCK = ITEMS.register("fungus_block", () -> blockItem(DreamBlocks.FUNGUS_BLOCK.get()));
     ///public static final RegistryObject<Item> FUNGUS = ITEMS.register("fungus", () -> blockItem(DreamBlocks.FUNGUS.get()));
     ///public static final RegistryObject<Item> FUNGUS_STEM = ITEMS.register("fungus_stem", () -> blockItem(DreamBlocks.FUNGUS_STEM.get()));
@@ -462,7 +468,7 @@ public class DreamItems {
 
     public static final RegistryObject<Item> DREAMY_MUSHROOM_SOUP = ITEMS.register("dreamy_mushroom_soup", () -> new Item(new Item.Properties().stacksTo(1).food(new FoodProperties.Builder().nutrition(6).effect(() -> new MobEffectInstance(DreamEffects.DREAMING.get(), 6000), 1.0F).build())));
     public static final RegistryObject<Item> MARSHMALLOW = ITEMS.register("marshmallow", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).build())));
-    public static final RegistryObject<Item> SMORE = ITEMS.register("smore", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).effect(() -> new MobEffectInstance(DreamEffects.SLEEPY.get(), 1200), 1.0F).build())));
+    public static final RegistryObject<Item> SMORE = ITEMS.register("smore", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).alwaysEat().effect(() -> new MobEffectInstance(DreamEffects.SLEEPY.get(), 600), 1.0F).build())));
 
     public static final RegistryObject<Item> FAWN_SPAWN_EGG = ITEMS.register("fawn_spawn_egg", () -> new ForgeSpawnEggItem(DreamEntities.FAWN, 9067055, 13942172, new Item.Properties()));
     public static final RegistryObject<Item> FOREST_FOX_SPAWN_EGG = ITEMS.register("forest_fox_spawn_egg", () -> new ForgeSpawnEggItem(DreamEntities.FOREST_FOX, 13337415, 15778937, new Item.Properties()));
@@ -488,5 +494,5 @@ public class DreamItems {
     static Item chestBoatItem(DreamBoat.Type type) {
         return new DreamBoatItem(true, type, new Item.Properties().stacksTo(1));
     }
-    
+
 }

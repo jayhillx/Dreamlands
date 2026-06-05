@@ -1,7 +1,15 @@
 {
   "variants": {
-    "": {
-      "model": "dreamlands:block/pink_puffball"
-    }
+    "": [
+      {
+        "model": "dreamlands:block/pink_puffball"
+      },
+      {
+        "model": "dreamlands:block/pink_puffball_variant"
+      },
+      {
+        "model": "dreamlands:block/pink_puffball_variant2"
+      }
+    ]
   }
 }

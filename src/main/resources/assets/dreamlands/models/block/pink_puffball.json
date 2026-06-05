@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "dreamlands:block/template_puffball",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "dreamlands:block/pink_puffball"
+    "flower": "dreamlands:block/pink_puffball_flower"
   }
 }

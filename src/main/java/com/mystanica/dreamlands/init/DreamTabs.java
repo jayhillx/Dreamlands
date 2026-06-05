@@ -13,7 +13,7 @@ public class DreamTabs {
 
     public static final RegistryObject<CreativeModeTab> DREAMLAND_TAB = CREATIVE_TABS.register("dreamland_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.dreamland"))
-            .icon(() -> new ItemStack(DreamItems.PINK_MUSHROOM_BLOCK.get()))
+            .icon(() -> new ItemStack(DreamItems.DREAMLAND.get()))
             .displayItems((parameters, output) -> {
                 output.accept(DreamItems.DREAMSTONE.get());
                 output.accept(DreamItems.DREAMSTONE_STAIRS.get());
@@ -57,18 +57,20 @@ public class DreamTabs {
                 output.accept(DreamItems.LILAC_BUSH_LEAVES.get());
                 output.accept(DreamItems.LILAC_BUSH.get());
 
-                output.accept(DreamItems.WISTERIA.get());
                 output.accept(DreamItems.GROUND_IVY.get());
                 output.accept(DreamItems.CLOVERS.get());
                 output.accept(DreamItems.WHITE_CLOVERS.get());
                 output.accept(DreamItems.PINK_CLOVERS.get());
                 output.accept(DreamItems.PETUNIA.get());
                 output.accept(DreamItems.PERIWINKLE.get());
+                ///output.accept(DreamItems.PINK_PUFFBALL.get());
                 output.accept(DreamItems.PINK_FOXGLOVE.get());
                 output.accept(DreamItems.PINK_HYACINTH.get());
                 output.accept(DreamItems.MAGENTA_HYACINTH.get());
                 output.accept(DreamItems.PURPLE_HYACINTH.get());
+                output.accept(DreamItems.PURPLE_LUPINE.get());
                 output.accept(DreamItems.VIOLETS.get());
+                output.accept(DreamItems.WISTERIA.get());
 
                 output.accept(DreamItems.FOREST_SHRUB_LEAVES.get());
                 output.accept(DreamItems.FOREST_SHRUB.get());
@@ -102,25 +104,25 @@ public class DreamTabs {
                 output.accept(DreamItems.DREAMY_BOAT.get());
                 output.accept(DreamItems.DREAMY_CHEST_BOAT.get());
 
-                ///output.accept(DreamItems.ASPEN_LEAVES.get());
-                ///output.accept(DreamItems.ASPEN_SAPLING.get());
-                ///output.accept(DreamItems.ASPEN_LOG.get());
-                ///output.accept(DreamItems.ASPEN_WOOD.get());
-                ///output.accept(DreamItems.STRIPPED_ASPEN_LOG.get());
-                ///output.accept(DreamItems.STRIPPED_ASPEN_WOOD.get());
-                ///output.accept(DreamItems.ASPEN_PLANKS.get());
-                ///output.accept(DreamItems.ASPEN_STAIRS.get());
-                ///output.accept(DreamItems.ASPEN_SLAB.get());
-                ///output.accept(DreamItems.ASPEN_FENCE.get());
-                ///output.accept(DreamItems.ASPEN_FENCE_GATE.get());
-                ///output.accept(DreamItems.ASPEN_BUTTON.get());
-                ///output.accept(DreamItems.ASPEN_PRESSURE_PLATE.get());
-                ///output.accept(DreamItems.ASPEN_TRAPDOOR.get());
-                ///output.accept(DreamItems.ASPEN_DOOR.get());
-                ///output.accept(DreamItems.ASPEN_SIGN.get());
-                ///output.accept(DreamItems.ASPEN_HANGING_SIGN.get());
-                ///output.accept(DreamItems.ASPEN_BOAT.get());
-                ///output.accept(DreamItems.ASPEN_CHEST_BOAT.get());
+                output.accept(DreamItems.ASPEN_LEAVES.get());
+                output.accept(DreamItems.ASPEN_SAPLING.get());
+                output.accept(DreamItems.ASPEN_LOG.get());
+                output.accept(DreamItems.ASPEN_WOOD.get());
+                output.accept(DreamItems.STRIPPED_ASPEN_LOG.get());
+                output.accept(DreamItems.STRIPPED_ASPEN_WOOD.get());
+                output.accept(DreamItems.ASPEN_PLANKS.get());
+                output.accept(DreamItems.ASPEN_STAIRS.get());
+                output.accept(DreamItems.ASPEN_SLAB.get());
+                output.accept(DreamItems.ASPEN_FENCE.get());
+                output.accept(DreamItems.ASPEN_FENCE_GATE.get());
+                output.accept(DreamItems.ASPEN_BUTTON.get());
+                output.accept(DreamItems.ASPEN_PRESSURE_PLATE.get());
+                output.accept(DreamItems.ASPEN_TRAPDOOR.get());
+                output.accept(DreamItems.ASPEN_DOOR.get());
+                output.accept(DreamItems.ASPEN_SIGN.get());
+                output.accept(DreamItems.ASPEN_HANGING_SIGN.get());
+                output.accept(DreamItems.ASPEN_BOAT.get());
+                output.accept(DreamItems.ASPEN_CHEST_BOAT.get());
 
                 output.accept(DreamItems.EVERGREEN_LEAVES.get());
                 output.accept(DreamItems.EVERGREEN_SAPLING.get());

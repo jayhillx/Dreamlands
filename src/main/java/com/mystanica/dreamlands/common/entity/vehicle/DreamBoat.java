@@ -104,7 +104,7 @@ public class DreamBoat extends Boat {
     public Item getDropItem() {
         return switch (Type.byId(this.entityData.get(DATA_ID_TYPE))) {
             case DREAMY -> DreamItems.DREAMY_BOAT.get();
-            ///case ASPEN -> DreamItems.ASPEN_BOAT.get();
+            case ASPEN -> DreamItems.ASPEN_BOAT.get();
             case EVERGREEN -> DreamItems.EVERGREEN_BOAT.get();
             case ETHEREAL -> DreamItems.ETHEREAL_BOAT.get();
             case CANDY -> DreamItems.CANDY_BOAT.get();
@@ -132,7 +132,7 @@ public class DreamBoat extends Boat {
 
     public enum Type implements StringRepresentable {
         DREAMY(DreamBlocks.DREAMY_PLANKS.get(), "dreamy"),
-        ///ASPEN(DreamBlocks.ASPEN_PLANKS.get(), "aspen"),
+        ASPEN(DreamBlocks.ASPEN_PLANKS.get(), "aspen"),
         EVERGREEN(DreamBlocks.EVERGREEN_PLANKS.get(), "evergreen"),
         ETHEREAL(DreamBlocks.ETHEREAL_PLANKS.get(), "ethereal"),
         CANDY(DreamBlocks.CANDY_PLANKS.get(), "candy"),

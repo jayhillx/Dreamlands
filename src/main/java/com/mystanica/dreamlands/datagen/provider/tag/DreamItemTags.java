@@ -18,6 +18,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class DreamItemTags extends ItemTagsProvider {
     public static final TagKey<Item> DREAMY_LOGS = ItemTags.create(Dreamlands.modLoc("dreamy_logs"));
+    public static final TagKey<Item> ASPEN_LOGS = ItemTags.create(Dreamlands.modLoc("aspen_logs"));
     public static final TagKey<Item> EVERGREEN_LOGS = ItemTags.create(Dreamlands.modLoc("evergreen_logs"));
     public static final TagKey<Item> ETHEREAL_LOGS = ItemTags.create(Dreamlands.modLoc("ethereal_logs"));
     public static final TagKey<Item> CANDY_LOGS = ItemTags.create(Dreamlands.modLoc("candy_logs"));
@@ -34,6 +35,7 @@ public class DreamItemTags extends ItemTagsProvider {
         DreamBlockFamilies.getAllFamilies().filter(DreamBlockFamily::shouldGenerateModel).forEach(this::generateFor);
         DreamGroups.getAllGroups().forEach(this::generateForGroups);
         this.copy(DreamBlockTags.DREAMY_LOGS, DreamItemTags.DREAMY_LOGS);
+        this.copy(DreamBlockTags.ASPEN_LOGS, DreamItemTags.ASPEN_LOGS);
         this.copy(DreamBlockTags.EVERGREEN_LOGS, DreamItemTags.EVERGREEN_LOGS);
         this.copy(DreamBlockTags.ETHEREAL_LOGS, DreamItemTags.ETHEREAL_LOGS);
         this.copy(DreamBlockTags.CANDY_LOGS, DreamItemTags.CANDY_LOGS);
@@ -43,6 +45,7 @@ public class DreamItemTags extends ItemTagsProvider {
 
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .addTag(DREAMY_LOGS)
+                .addTag(ASPEN_LOGS)
                 .addTag(EVERGREEN_LOGS)
                 .addTag(ETHEREAL_LOGS)
                 .addTag(CANDY_LOGS)
@@ -56,7 +59,7 @@ public class DreamItemTags extends ItemTagsProvider {
                 DreamItems.FOREST_MOSS_BLOCK.get()
         ).replace(false);
     }
-    
+
     private void generateFor(DreamBlockFamily family) {
         family.getVariants().forEach((variant, block) -> {
             boolean flag = family.isFlammable();

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamlands:block/aspen_slab"
+    },
+    "type=double": {
+      "model": "dreamlands:block/aspen_planks"
+    },
+    "type=top": {
+      "model": "dreamlands:block/aspen_slab_top"
+    }
+  }
+}

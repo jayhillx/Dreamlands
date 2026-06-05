@@ -11,6 +11,7 @@ public final class DreamGroups {
     public static final DreamGroup LEAVES = DreamGroup.builder(DreamGroup.Category.LEAVES).entries((entry) -> {
         entry.accept(DreamBlocks.FOREST_SHRUB_LEAVES.get());
         entry.accept(DreamBlocks.DREAMY_LEAVES.get());
+        entry.accept(DreamBlocks.ASPEN_LEAVES.get());
         entry.accept(DreamBlocks.EVERGREEN_LEAVES.get());
         entry.accept(DreamBlocks.ETHEREAL_LEAVES.get());
         entry.accept(DreamBlocks.LILAC_BUSH_LEAVES.get());
@@ -23,6 +24,7 @@ public final class DreamGroups {
     public static final DreamGroup SAPLINGS = DreamGroup.builder(DreamGroup.Category.SAPLINGS).entries((entry) -> {
         entry.accept(DreamBlocks.FOREST_SHRUB.get());
         entry.accept(DreamBlocks.DREAMY_SAPLING.get());
+        entry.accept(DreamBlocks.ASPEN_SAPLING.get());
         entry.accept(DreamBlocks.EVERGREEN_SAPLING.get());
         entry.accept(DreamBlocks.ETHEREAL_SAPLING.get());
         entry.accept(DreamBlocks.LILAC_BUSH.get());
@@ -43,7 +45,9 @@ public final class DreamGroups {
     }).build();
 
     public static final DreamGroup TALL_FLOWERS = DreamGroup.builder(DreamGroup.Category.TALL_FLOWERS).entries((entry) -> {
+        ///entry.accept(DreamBlocks.PINK_PUFFBALL.get());
         entry.accept(DreamBlocks.PINK_FOXGLOVE.get());
+        entry.accept(DreamBlocks.PURPLE_LUPINE.get());
     }).build();
 
     public static Stream<DreamGroup> getAllGroups() {

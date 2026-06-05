@@ -32,8 +32,8 @@ public class DreamTreePlacements {
     public static final ResourceKey<PlacedFeature> LARGE_DREAMY_SHRUB_CHECKED = createKey("large_dreamy_shrub_checked");
     public static final ResourceKey<PlacedFeature> DREAMY_MUSHROOM_CHECKED = createKey("dreamy_mushroom_checked");
     public static final ResourceKey<PlacedFeature> LARGE_DREAMY_MUSHROOM_CHECKED = createKey("large_dreamy_mushroom_checked");
-    ///public static final ResourceKey<PlacedFeature> ASPEN_TREE_CHECKED = createKey("aspen_tree_checked");
-    ///public static final ResourceKey<PlacedFeature> TALL_ASPEN_TREE_CHECKED = createKey("tall_aspen_tree_checked");
+    public static final ResourceKey<PlacedFeature> ASPEN_TREE_CHECKED = createKey("aspen_tree_checked");
+    public static final ResourceKey<PlacedFeature> TALL_ASPEN_TREE_CHECKED = createKey("tall_aspen_tree_checked");
     public static final ResourceKey<PlacedFeature> EVERGREEN_TREE_CHECKED = createKey("evergreen_tree_checked");
     public static final ResourceKey<PlacedFeature> LARGE_EVERGREEN_TREE_CHECKED = createKey("large_evergreen_tree_checked");
     public static final ResourceKey<PlacedFeature> TOADSTOOL_CHECKED = createKey("toadstool_checked");
@@ -58,8 +58,8 @@ public class DreamTreePlacements {
         Holder<ConfiguredFeature<?, ?>> LARGE_DREAMY_SHRUB = getter.getOrThrow(DreamTreeFeatures.LARGE_DREAMY_SHRUB);
         Holder<ConfiguredFeature<?, ?>> DREAMY_MUSHROOM = getter.getOrThrow(DreamTreeFeatures.DREAMY_MUSHROOM);
         Holder<ConfiguredFeature<?, ?>> LARGE_DREAMY_MUSHROOM = getter.getOrThrow(DreamTreeFeatures.LARGE_DREAMY_MUSHROOM);
-        ///Holder<ConfiguredFeature<?, ?>> ASPEN_TREE = getter.getOrThrow(DreamTreeFeatures.ASPEN_TREE);
-        ///Holder<ConfiguredFeature<?, ?>> TALL_ASPEN_TREE = getter.getOrThrow(DreamTreeFeatures.TALL_ASPEN_TREE);
+        Holder<ConfiguredFeature<?, ?>> ASPEN_TREE = getter.getOrThrow(DreamTreeFeatures.ASPEN_TREE);
+        Holder<ConfiguredFeature<?, ?>> TALL_ASPEN_TREE = getter.getOrThrow(DreamTreeFeatures.TALL_ASPEN_TREE);
         Holder<ConfiguredFeature<?, ?>> EVERGREEN_TREE = getter.getOrThrow(DreamTreeFeatures.EVERGREEN_TREE);
         Holder<ConfiguredFeature<?, ?>> LARGE_EVERGREEN_TREE = getter.getOrThrow(DreamTreeFeatures.LARGE_EVERGREEN_TREE);
         Holder<ConfiguredFeature<?, ?>> TOADSTOOL = getter.getOrThrow(DreamTreeFeatures.TOADSTOOL);
@@ -82,8 +82,8 @@ public class DreamTreePlacements {
         PlacementUtils.register(context, LARGE_DREAMY_SHRUB_CHECKED, LARGE_DREAMY_SHRUB, withoutPlacement(DreamBlocks.DREAMY_SAPLING.get()));
         PlacementUtils.register(context, DREAMY_MUSHROOM_CHECKED, DREAMY_MUSHROOM, withoutPlacement(DreamBlocks.DREAMY_MUSHROOM.get()));
         PlacementUtils.register(context, LARGE_DREAMY_MUSHROOM_CHECKED, LARGE_DREAMY_MUSHROOM, withoutPlacement(DreamBlocks.DREAMY_MUSHROOM.get()));
-        ///PlacementUtils.register(context, ASPEN_TREE_CHECKED, ASPEN_TREE, withoutPlacement(DreamBlocks.ASPEN_SAPLING.get()));
-        ///PlacementUtils.register(context, TALL_ASPEN_TREE_CHECKED, TALL_ASPEN_TREE, withoutPlacement(DreamBlocks.ASPEN_SAPLING.get()));
+        PlacementUtils.register(context, ASPEN_TREE_CHECKED, ASPEN_TREE, withoutPlacement(DreamBlocks.ASPEN_SAPLING.get()));
+        PlacementUtils.register(context, TALL_ASPEN_TREE_CHECKED, TALL_ASPEN_TREE, withoutPlacement(DreamBlocks.ASPEN_SAPLING.get()));
         PlacementUtils.register(context, EVERGREEN_TREE_CHECKED, EVERGREEN_TREE, withoutPlacement(DreamBlocks.EVERGREEN_SAPLING.get()));
         PlacementUtils.register(context, LARGE_EVERGREEN_TREE_CHECKED, LARGE_EVERGREEN_TREE, withoutPlacement(DreamBlocks.EVERGREEN_SAPLING.get()));
         PlacementUtils.register(context, TOADSTOOL_CHECKED, TOADSTOOL, withoutPlacement(DreamBlocks.TOADSTOOL.get()));
